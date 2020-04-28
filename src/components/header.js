@@ -2,6 +2,13 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+const assignClass = route => {
+  console.log(`ROUTE = ${route}`)
+
+  return window.location.pathname === route
+    ? 'header-link active-route'
+    : 'header-link';
+};
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -11,16 +18,22 @@ const Header = ({ siteTitle }) => (
   >
     <div id="header-wrapper">
       <h1 id="header-name" style={{ margin: 0 }}>
-        <Link to="/" className="header-link">
+        <Link to="/" className={assignClass('/')}>
           CG
         </Link>
       </h1>
       <div id="header-routes">
-        <Link className="header-link" to="/apps/">
+        <Link className={assignClass('/about/')} to="/about/">
+          About
+        </Link>
+        <Link className={assignClass('/apps/')} to="/apps/">
           My Apps
         </Link>
-        <Link className="header-link" to="/resume/">
+        <Link className={assignClass('/resume/')} to="/resume/">
           Resume
+        </Link>
+        <Link className={assignClass('/contact/')} to="/contact/">
+          Contact
         </Link>
       </div>
     </div>

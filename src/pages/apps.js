@@ -11,15 +11,11 @@ function renderApps() {
     </div>
   ));
 }
-const IndexPage = () => 
- (
+const AppsPage = () => (
   <Layout>
     <SEO title="My Apps" />
-    <div id="app-container">
-      {renderApps()}
-    </div>
-    
+    <div id="app-container">{renderApps()}</div>
   </Layout>
 );
 
-export default IndexPage;
+export default AppsPage;

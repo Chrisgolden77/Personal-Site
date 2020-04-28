@@ -688,12 +688,15 @@ pre tt:after {
 #header-routes {
   display: flex;
   flex-wrap: wrap;
-
 }
+
 #layout {
   background: black;
   color: white;
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.active-route {
+  text-decoration: underline;
 }
