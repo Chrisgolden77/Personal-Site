@@ -2,15 +2,12 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-
 const Header = ({ siteTitle, path }) => {
-  const assignClass = (link) => {
-    console.log(`path= ${path}`)
-      return path === link
-        ? 'header-link active-link'
-        : 'header-link';
-    }
-  
+  const assignClass = link => {
+    console.log(`path= ${path}`);
+    return path === link ? 'header-link active-link' : 'header-link';
+  };
+
   return (
     <header
       style={{
@@ -40,7 +37,7 @@ const Header = ({ siteTitle, path }) => {
         </div>
       </div>
     </header>
-  )
+  );
 };
 Header.propTypes = {
   siteTitle: PropTypes.string,

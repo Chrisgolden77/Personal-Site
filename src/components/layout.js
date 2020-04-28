@@ -27,7 +27,7 @@ const Layout = ({ children, path }) => {
     <>
       <div id="layout">
         <header>
-          <Header siteTitle={data.site.siteMetadata.title} path={path}/>
+          <Header siteTitle={data.site.siteMetadata.title} path={path} />
         </header>
 
         <main
@@ -37,7 +37,7 @@ const Layout = ({ children, path }) => {
             alignSelf: 'center',
             textAlign: 'center',
           }}
-          path
+          path={path}
         >
           {children}
         </main>
