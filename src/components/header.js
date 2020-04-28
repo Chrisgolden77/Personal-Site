@@ -9,31 +9,23 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-    id="header-wrapper"
-      
-    >
+    <div id="header-wrapper">
       <h1 id="header-name" style={{ margin: 0 }}>
         <Link to="/" className="header-link">
-          {siteTitle}
+          CG
         </Link>
       </h1>
       <div id="header-routes">
-        <div>
-          <Link className="header-link" to="/apps/">
-            My Apps
-          </Link>
-        </div>
-        <div>
-          <Link className="header-link" to="/resume/">
-            Resume
-          </Link>
-        </div>
+        <Link className="header-link" to="/apps/">
+          My Apps
+        </Link>
+        <Link className="header-link" to="/resume/">
+          Resume
+        </Link>
       </div>
     </div>
   </header>
 );
-
 Header.propTypes = {
   siteTitle: PropTypes.string,
 };
