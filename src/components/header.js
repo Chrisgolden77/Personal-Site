@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const assignClass = route => {
-  console.log(`ROUTE = ${route}`)
-
   return window.location.pathname === route
     ? 'header-link active-route'
     : 'header-link';
