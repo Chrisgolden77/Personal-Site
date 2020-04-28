@@ -9,11 +9,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Welcome to my personal site!</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, margin: 'auto' }}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-    <Link to="/page-3/">Go to page 3</Link>
   </Layout>
 )
 
