@@ -6,8 +6,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Stars from '../images/stars.svg';
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({path}) => (
+  <Layout path={path}>
     <SEO title="Home" />
     <h1>Welcome to my personal site!</h1>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, margin: 'auto' }}>

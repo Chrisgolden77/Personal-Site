@@ -685,7 +685,7 @@ pre tt:after {
   justify-content: space-between;
   padding: 10px;
 }
-#header-routes {
+#header-links {
   display: flex;
   flex-wrap: wrap;
 }
@@ -697,6 +697,6 @@ pre tt:after {
   flex-direction: column;
   height: 100%;
 }
-.active-route {
+.active-link {
   text-decoration: underline;
 }

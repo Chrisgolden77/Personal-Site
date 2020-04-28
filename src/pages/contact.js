@@ -4,8 +4,8 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const ContactPage = () => (
-  <Layout>
+const ContactPage = ({path}) => (
+  <Layout path={path}>
     <SEO title="Page two" />
     <h1>Hi from the third page</h1>
     <p>Welcome to page 2</p>

@@ -4,8 +4,8 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const ResumePage = () => (
-  <Layout>
+const ResumePage = ({path}) => (
+  <Layout path={path}>
     <SEO title="Resume " />
     <h1>Hi from the Resume page</h1>
     <p>Welcome to Resume</p>
