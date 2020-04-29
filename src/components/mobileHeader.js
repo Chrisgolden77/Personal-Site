@@ -6,11 +6,7 @@ import Logo from '../images/chris-logo.png';
 
 const MobileHeader = ({ siteTitle, path }) => {
   const assignClass = link => {
-    if (link === '/') {
-      return path === link ? 'home-link active-home-link' : 'home-link';
-    } else {
-      return path === link ? 'header-link active-link' : 'header-link';
-    }
+    return path === link ? 'header-link active-link' : 'header-link';
   };
   const displayLinks = () => {};
   return (
@@ -20,6 +16,9 @@ const MobileHeader = ({ siteTitle, path }) => {
       </h1>
 
       <div id="header-links">
+        <Link className={assignClass('/')} to="/">
+          Home
+        </Link>
         <Link className={assignClass('/about/')} to="/about/">
           About
         </Link>

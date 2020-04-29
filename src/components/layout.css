@@ -665,6 +665,7 @@ pre tt:after {
   }
   .header-logo {
     width: 80px !important;
+    margin-top: 10px !important;
   }
   .mobile-home-link {
     display: flex;
@@ -676,10 +677,10 @@ pre tt:after {
     display: flex !important;
     height: 90px;
     flex-direction: column;
-    left: 5px;
+    right: 5px;
     margin: auto;
     overflow: hidden;
-    padding: 10px;
+    padding: 1px;
     position: fixed;
     top: 5px;
     z-index: 10;
