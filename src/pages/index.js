@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Image from '../components/image';
+import Logo from '../images/chris-logo.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -18,7 +18,7 @@ const IndexPage = ({ path }) => (
         height: '100%',
       }}
     >
-      <Image />
+     <img src={Logo} />
     </div>
   </Layout>
 );

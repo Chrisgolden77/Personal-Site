@@ -647,21 +647,49 @@ pre tt:after {
     font-size: 100%;
   }
   #header {
-    background: rgba(34, 139, 34, 0) !important;
+    /* background: rgba(34, 139, 34, 0) !important; */
     display: none;
   }
+  .header-link {
+    margin: 13px !important;
+  }
+  .active-link {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  #header-links {
+    flex-direction: column !important;
+    justify-content: center;
+    margin: auto;
+  }
+  .header-logo {
+    width: 80px !important;
+  }
+  .mobile-home-link {
+    display: flex;
+    margin: auto 10px !important;
+  }
   #mobile-header {
-    width: 80px;
-    height: 80px;
-    display: block !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-radius: 15px;
+    display: flex !important;
+    height: 90px;
+    flex-direction: column;
+    left: 5px;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
     position: fixed;
     top: 5px;
-    left: 4px;
-    background: rgba(0, 0, 0, 0.4) !important;
-    border-radius: 100px;
+    z-index: 10;
+  }
+  #mobile-header:hover {
+    height: fit-content;
   }
   #main {
     padding-top: 6rem;
+    border-top: none;
   }
 }
 
@@ -696,28 +724,59 @@ pre tt:after {
 }
 
 /* ********HEADER********* */
-
 .header-link {
   color: white;
-  margin: 10px;
+  margin: auto 10px;
   text-decoration: none;
+  font-size: larger;
 }
 .header-link:hover {
+  display: flex;
+  border: 1px solid white !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
   color: rgb(226, 226, 226);
 }
+.header-logo {
+  width: 70px;
+  margin: auto;
+}
+
 #header-wrapper {
   color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 15px;
+  padding: 7px 15px 13px 15px;
 }
 
 #header-links {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
+.home-link {
+  margin: auto 10px !important;
+}
+.home-link:hover {
+  padding: 1px;
+  margin-bottom: 3px !important;
+  display: flex;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.active-home-link {
+  padding: 1px;
+  margin-bottom: 3px !important;
+  display: flex;
+  border: 1px solid white;
+  border-radius: 20px;
+}
 .active-link {
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
   text-decoration: underline;
 }
 /* *******MOBILE HEADER******** */
@@ -732,9 +791,9 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url('../images/Brown-Desert.svg') !important;
+  background-image: url('../images/Poly-Desert.svg') !important;
   background-size: cover !important;
-  background-position: top !important;
+  background-position: bottom center !important;
 }
 /* **********HOME PAGE*********** */
 /* .home {
@@ -742,5 +801,5 @@ pre tt:after {
 
 #alternate-main {
   background: black;
-  height: 100%
+  height: 100%;
 }
