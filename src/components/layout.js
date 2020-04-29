@@ -36,6 +36,7 @@ const Layout = ({ children, path }) => {
             width: '100%',
             alignSelf: 'center',
             textAlign: 'center',
+            overflow: 'auto'
           }}
           path={path}
         >

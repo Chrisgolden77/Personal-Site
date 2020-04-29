@@ -10,7 +10,7 @@ const IndexPage = ({path}) => (
   <Layout path={path}>
     <SEO title="Home" />
     <h1>Welcome to my personal site!</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, margin: 'auto' }}>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, margin: 'auto', overflow: 'auto', height: '100%' }}>
       <Image />
     </div>
   </Layout>
