@@ -689,6 +689,11 @@ pre tt:after {
   display: flex;
   flex-wrap: wrap;
 }
+.active-link {
+  text-decoration: underline;
+}
+
+/* *****LAYOUT GENERAL****** */
 
 #layout {
   background: black;
@@ -696,7 +701,4 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-.active-link {
-  text-decoration: underline;
 }
