@@ -2,16 +2,13 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Header = ({ siteTitle, path }) => {
+const MobileHeader = ({ siteTitle, path }) => {
   const assignClass = link => {
     return path === link ? 'header-link active-link' : 'header-link';
   };
 
   return (
-    <header
-      id="header"
-
-    >
+    <header id="mobile-header">
       <div id="header-wrapper">
         <h1 id="header-name" style={{ margin: 0 }}>
           <Link to="/" className={assignClass('/')}>
@@ -36,14 +33,14 @@ const Header = ({ siteTitle, path }) => {
     </header>
   );
 };
-Header.propTypes = {
+MobileHeader.propTypes = {
   siteTitle: PropTypes.string,
   path: PropTypes.string,
 };
 
-Header.defaultProps = {
+MobileHeader.defaultProps = {
   siteTitle: ``,
   path: '',
 };
 
-export default Header;
+export default MobileHeader;

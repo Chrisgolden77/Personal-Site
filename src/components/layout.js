@@ -10,9 +10,10 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import MobileHeader from './mobileHeader';
 import './layout.css';
 
-const Layout = ({ children, path }) => {
+const Layout = ({ children, className, additionalStyles, path }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,28 +26,24 @@ const Layout = ({ children, path }) => {
 
   return (
     <>
-      <div id="layout">
+      <div id="layout" className={className}>
         <header>
           <Header siteTitle={data.site.siteMetadata.title} path={path} />
+          <MobileHeader siteTitle={data.site.siteMetadata.title} path={path} />
         </header>
 
         <main
-          style={{
-            height: '100%',
-            width: '100%',
-            alignSelf: 'center',
-            textAlign: 'center',
-            overflow: 'auto'
-          }}
+          id="main"
           path={path}
+          style={additionalStyles}
         >
           {children}
         </main>
 
         <footer
           style={{
-            backgroundColor: 'forestgreen',
             textAlign: 'center',
+            borderTop: '1px solid #ffffffa3',
           }}
         >
           FOOTER

@@ -633,9 +633,35 @@ pre tt:before,
 pre tt:after {
   content: '';
 }
+#main {
+  align-self: center;
+  border-top: 1px solid #ffffffa3;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 0px;
+  text-align: center;
+  width: 100%;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+  #header {
+    background: rgba(34, 139, 34, 0) !important;
+    display: none;
+  }
+  #mobile-header {
+    width: 80px;
+    height: 80px;
+    display: block !important;
+    position: fixed;
+    top: 5px;
+    left: 4px;
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-radius: 100px;
+  }
+  #main {
+    padding-top: 6rem;
   }
 }
 
@@ -670,6 +696,7 @@ pre tt:after {
 }
 
 /* ********HEADER********* */
+
 .header-link {
   color: white;
   margin: 10px;
@@ -683,8 +710,9 @@ pre tt:after {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
 }
+
 #header-links {
   display: flex;
   flex-wrap: wrap;
@@ -692,7 +720,10 @@ pre tt:after {
 .active-link {
   text-decoration: underline;
 }
-
+/* *******MOBILE HEADER******** */
+#mobile-header {
+  display: none;
+}
 /* *****LAYOUT GENERAL****** */
 
 #layout {
@@ -701,4 +732,15 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-image: url('../images/Brown-Desert.svg') !important;
+  background-size: cover !important;
+  background-position: top !important;
+}
+/* **********HOME PAGE*********** */
+/* .home {
+} */
+
+#alternate-main {
+  background: black;
+  height: 100%
 }
