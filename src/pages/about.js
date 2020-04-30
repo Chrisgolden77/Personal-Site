@@ -7,7 +7,9 @@ import SEO from '../components/seo';
 const AboutPage = ({ path }) => (
   <Layout path={path} mainId="alternate-main">
     <SEO title="About" />
-    <h1>Hi from the About Page</h1>
+    <div className="mobile-page-title">
+      <h1>About Me</h1>
+    </div>
     <p>Welcome to the About page</p>
   </Layout>
 );

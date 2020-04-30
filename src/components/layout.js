@@ -26,13 +26,14 @@ const Layout = ({ children, className, additionalStyles, path }) => {
 
   return (
     <>
-      <div id="layout" className={className}>
+      <div id="layout">
         <header>
           <Header siteTitle={data.site.siteMetadata.title} path={path} />
           <MobileHeader siteTitle={data.site.siteMetadata.title} path={path} />
         </header>
 
         <main
+          className={className}
           id="main"
           path={path}
           style={additionalStyles}

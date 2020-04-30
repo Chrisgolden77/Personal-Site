@@ -6,20 +6,13 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const IndexPage = ({ path }) => (
-  <Layout className="home" path={path} >
+  <Layout className="home" path={path}>
     <SEO title="Home" />
-    <h1>Welcome to my personal site!</h1>
-    <div
-      style={{
-        maxWidth: `300px`,
-        marginBottom: `1.45rem`,
-        margin: 'auto',
-        overflow: 'auto',
-        height: '100%',
-      }}
-    >
-     <img src={Logo} />
+    <div>
+      <h1>Welcome to my personal site!</h1>
     </div>
+
+    <img src={Logo} />
   </Layout>
 );
 
