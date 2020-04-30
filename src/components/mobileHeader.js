@@ -5,8 +5,8 @@ import React, { useState } from 'react';
 import Logo from '../images/chris-logo.png';
 
 const MobileHeader = ({ menuLinks, path, siteTitle }) => {
-  let [isMobileMenuOpen, setMobileMenuState] = useState(false);
-
+  const [isMobileMenuOpen, setMobileMenuState] = useState(false);
+  
   const assignClass = link => {
     return path === link ? 'header-link active-link' : 'header-link';
   };
