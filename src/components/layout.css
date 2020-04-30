@@ -635,7 +635,7 @@ pre tt:after {
 #main {
   align-self: center;
   border-top: 1px solid #ffffffa3;
-  height: 90%;
+  height: 100%;
   overflow: auto;
   /* padding: 20px 0px; */
   text-align: center;
@@ -674,7 +674,7 @@ pre tt:after {
   }
   .header-logo {
     width: 80px !important;
-    margin: 10px 0px !important;
+    margin: 10px auto !important;
   }
   #main {
     border-top: none;
@@ -693,7 +693,7 @@ pre tt:after {
     position: fixed;
     right: 5px;
     top: 5px;
-    width: 100px;
+    width: 105px;
     z-index: 10;
   }
   /* #mobile-header:hover {
@@ -723,7 +723,7 @@ pre tt:after {
 #app-container {
   border: 1px solid gray;
   border-radius: 10px;
-  height: 95%;
+  height: 85%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -799,14 +799,14 @@ pre tt:after {
 /* *****LAYOUT GENERAL****** */
 
 #layout {
-  background: black;
+  background: rgb(36, 60, 87);
   color: white;
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url('../images/Poly-Desert.png') !important;
+  /* background-image: url('../images/brown-Desert.png') !important;
   background-size: cover !important;
-  background-position: bottom center !important;
+  background-position: top right !important; */
 }
 /* **********HOME PAGE*********** */
 .home {

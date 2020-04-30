@@ -14,7 +14,7 @@ const AppsPage = ({ path }) => {
   };
   return (
     <Layout path={path}>
-      <SEO title="My Apps" />
+      {/* <SEO title="My Apps" /> */}
       <div className="app-title">
         <h1>Apps</h1>
       </div>

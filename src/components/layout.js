@@ -41,14 +41,14 @@ const Layout = ({ children, className, additionalStyles, path }) => {
           {children}
         </main>
 
-        <footer
+        {/* <footer
           style={{
             textAlign: 'center',
             borderTop: '1px solid #ffffffa3',
           }}
         >
           FOOTER
-        </footer>
+        </footer> */}
       </div>
     </>
   );
