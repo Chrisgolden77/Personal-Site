@@ -31,7 +31,6 @@ details,
 figcaption,
 figure,
 footer,
-header,
 main,
 menu,
 nav,
@@ -638,7 +637,7 @@ pre tt:after {
   border-top: 1px solid #ffffffa3;
   height: 100%;
   overflow: auto;
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
   text-align: center;
   width: 100%;
 }
@@ -716,10 +715,9 @@ pre tt:after {
 #app-container {
   border: 1px solid gray;
   border-radius: 10px;
-  height: 90%;
+  height: 95%;
   display: flex;
   flex-wrap: wrap;
-  max-height: 90%;
   justify-content: space-between;
   margin: 10px auto;
   overflow: auto;
@@ -728,6 +726,7 @@ pre tt:after {
 }
 
 /* ********HEADER********* */
+
 .header-link {
   color: white;
   margin: auto 10px;
@@ -752,8 +751,9 @@ pre tt:after {
   color: white;
   display: flex;
   flex-wrap: wrap;
+  /* height: 100% !important; */
   justify-content: space-between;
-  padding: 7px 15px 13px 15px;
+  padding: 7px 15px 7px 15px;
 }
 
 #header-links {
@@ -773,7 +773,6 @@ pre tt:after {
 }
 .active-home-link {
   padding: 1px;
-  margin-bottom: 3px !important;
   display: flex;
   border: 1px solid white;
   border-radius: 20px;
