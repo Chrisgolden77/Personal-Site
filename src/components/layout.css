@@ -653,6 +653,9 @@ pre tt:after {
   .header-link {
     margin: 13px !important;
   }
+  .header-link:hover {
+    margin: 0px !important;
+  }
   .active-link {
     margin-left: 0px !important;
     margin-right: 0px !important;
