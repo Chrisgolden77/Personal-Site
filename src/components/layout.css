@@ -687,19 +687,17 @@ pre tt:after {
     background: rgba(0, 0, 0, 0.4) !important;
     border-radius: 15px;
     display: flex !important;
-    height: 90px;
     flex-direction: column;
-    right: 5px;
-    margin: auto;
-    overflow: hidden;
+    height: fit-content;
     padding: 1px;
     position: fixed;
+    right: 5px;
     top: 5px;
+    width: 100px;
     z-index: 10;
   }
-  #mobile-header:hover {
-    height: fit-content;
-  }
+  /* #mobile-header:hover {
+  } */
   .mobile-page-title {
     padding-top: 6rem;
     /* margin-top: 0px !important; */
