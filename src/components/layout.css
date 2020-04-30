@@ -636,8 +636,8 @@ pre tt:after {
   align-self: center;
   border-top: 1px solid #ffffffa3;
   height: 100%;
-  overflow: auto;
-  /* padding: 20px 0px; */
+  /* padding: 10px 0px; */
+  margin: 0px;
   text-align: center;
   width: 100%;
 }
@@ -723,11 +723,11 @@ pre tt:after {
 #app-container {
   border: 1px solid gray;
   border-radius: 10px;
-  height: 85%;
+  height: 97%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px auto;
+  margin: 15px auto;
   overflow: auto;
   padding: 10px 0 10px 0;
   width: 95%;
@@ -804,9 +804,9 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* background-image: url('../images/brown-Desert.png') !important;
+  background-image: url('../images/Orange-Desert.png') !important;
   background-size: cover !important;
-  background-position: top right !important; */
+  background-position: top right !important;
 }
 /* **********HOME PAGE*********** */
 .home {

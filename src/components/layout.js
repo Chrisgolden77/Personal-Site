@@ -19,6 +19,10 @@ const Layout = ({ children, className, additionalStyles, path }) => {
       site {
         siteMetadata {
           title
+          menuLinks {
+            name
+            link
+          }
         }
       }
     }
@@ -28,8 +32,16 @@ const Layout = ({ children, className, additionalStyles, path }) => {
     <>
       <div id="layout">
         <header>
-          <Header siteTitle={data.site.siteMetadata.title} path={path} />
-          <MobileHeader siteTitle={data.site.siteMetadata.title} path={path} />
+          <Header
+            menuLinks={data.site.siteMetadata.menuLinks}
+            path={path}
+            siteTitle={data.site.siteMetadata.title}
+          />
+          <MobileHeader
+            menuLinks={data.site.siteMetadata.menuLinks}
+            path={path}
+            siteTitle={data.site.siteMetadata.title}
+          />
         </header>
 
         <main

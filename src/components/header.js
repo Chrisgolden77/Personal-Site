@@ -4,50 +4,47 @@ import React from 'react';
 
 import Logo from '../images/chris-logo.png';
 
-const Header = ({ siteTitle, path }) => {
+const Header = ({ menuLinks, path, siteTitle }) => {
   const assignClass = link => {
-    if(link === '/') {
-      return path === link ? 'home-link active-home-link' : 'home-link'
+    if (link === '/') {
+      return path === link ? 'home-link active-home-link' : 'home-link';
     } else {
       return path === link ? 'header-link active-link' : 'header-link';
     }
   };
+  const renderMenuLinks = () =>
+    menuLinks.map(link => {
+      return (
+        <Link className={assignClass(link.link)} to={link.link}>
+          {link.name}
+        </Link>
+      );
+    });
 
   return (
     <header id="header">
       <div id="header-wrapper">
         <div>
-          <Link className={assignClass('/')} to="/" >
+          <Link className={assignClass('/')} to="/">
             <img src={Logo} className="header-logo" />
           </Link>
         </div>
 
-        <div id="header-links">
-          <Link className={assignClass('/about/')} to="/about/">
-            About
-          </Link>
-          <Link className={assignClass('/apps/')} to="/apps/">
-            My Apps
-          </Link>
-          <Link className={assignClass('/resume/')} to="/resume/">
-            Resume
-          </Link>
-          <Link className={assignClass('/contact/')} to="/contact/">
-            Contact
-          </Link>
-        </div>
+        <div id="header-links">{renderMenuLinks()}</div>
       </div>
     </header>
   );
 };
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  menuLinks: PropTypes.array,
   path: PropTypes.string,
+  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
+  menuLinks: [],
   siteTitle: ``,
-  path: '',
+  path: ``,
 };
 
 export default Header;

@@ -4,12 +4,20 @@ import React, { useState } from 'react';
 
 import Logo from '../images/chris-logo.png';
 
-const MobileHeader = ({ siteTitle, path }) => {
+const MobileHeader = ({ menuLinks, path, siteTitle }) => {
   let [isMobileMenuOpen, setMobileMenuState] = useState(false);
 
   const assignClass = link => {
     return path === link ? 'header-link active-link' : 'header-link';
   };
+  const renderMenuLinks = () =>
+    menuLinks.map(link => {
+      return (
+        <Link className={assignClass(link.link)} to={link.link}>
+          {link.name}
+        </Link>
+      );
+    });
 
   return (
     <header id="mobile-header">
@@ -23,34 +31,25 @@ const MobileHeader = ({ siteTitle, path }) => {
       </h1>
       {isMobileMenuOpen ? (
         <div id="header-links">
-          <Link className={assignClass('/')} to="/">
+          <Link className={assignClass('/')} to='/'>
             Home
           </Link>
-          <Link className={assignClass('/about/')} to="/about/">
-            About
-          </Link>
-          <Link className={assignClass('/apps/')} to="/apps/">
-            My Apps
-          </Link>
-          <Link className={assignClass('/resume/')} to="/resume/">
-            Resume
-          </Link>
-          <Link className={assignClass('/contact/')} to="/contact/">
-            Contact
-          </Link>
+          {renderMenuLinks()}
         </div>
       ) : null}
     </header>
   );
 };
 MobileHeader.propTypes = {
-  siteTitle: PropTypes.string,
+  menuLinks: PropTypes.array,
   path: PropTypes.string,
+  siteTitle: PropTypes.string,
 };
 
 MobileHeader.defaultProps = {
-  siteTitle: ``,
+  menuLinks: [],
   path: '',
+  siteTitle: ``,
 };
 
 export default MobileHeader;

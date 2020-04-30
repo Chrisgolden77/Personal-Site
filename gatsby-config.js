@@ -1,6 +1,24 @@
 module.exports = {
   siteMetadata: {
     title: `Chris Golden`,
+    menuLinks: [
+      {
+        name: 'About',
+        link: '/about/',
+      },
+      // {
+      //   name: 'My Apps',
+      //   link: '/apps/',
+      // },
+      {
+        name: 'Resume',
+        link: '/resume/',
+      },
+      {
+        name: 'Contact',
+        link: '/contact/',
+      },
+    ],
     description: `Chris Golden's personal website`,
     author: `Chris Golden`,
   },
@@ -31,4 +49,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
