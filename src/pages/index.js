@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 const IndexPage = ({ path }) => (
   <Layout className="home" path={path}>
     <SEO title="Home" />
-    <div>
+    <div className="mobile-page-title">
       <h1>Welcome to my personal site!</h1>
     </div>
 

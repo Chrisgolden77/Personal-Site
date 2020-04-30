@@ -647,6 +647,9 @@ pre tt:after {
     width: 80% !important;
     height: 250px !important;
   }
+  .app-title {
+    margin-top: 35px !important;
+  }
   html {
     font-size: 100%;
   }
@@ -674,7 +677,6 @@ pre tt:after {
     margin: 10px 0px !important;
   }
   #main {
-    padding-top: 6rem;
     border-top: none;
   }
   .mobile-home-link {
@@ -699,7 +701,8 @@ pre tt:after {
     height: fit-content;
   }
   .mobile-page-title {
-    margin: 30px !important;
+    padding-top: 6rem;
+    /* margin-top: 0px !important; */
   }
 }
 
@@ -803,7 +806,7 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url('../images/Poly-Desert.png') !important;
+  background-image: url('../images/Poly-Desert.svg') !important;
   background-size: cover !important;
   background-position: bottom center !important;
 }

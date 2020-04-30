@@ -15,7 +15,7 @@ const AppsPage = ({ path }) => {
   return (
     <Layout path={path}>
       <SEO title="My Apps" />
-      <div className="mobile-page-title">
+      <div className="app-title">
         <h1>Apps</h1>
       </div>
       <div id="app-container">{renderApps()}</div>
