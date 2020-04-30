@@ -803,7 +803,7 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url('../images/Poly-Desert.svg') !important;
+  background-image: url('../images/Poly-Desert.png') !important;
   background-size: cover !important;
   background-position: bottom center !important;
 }
