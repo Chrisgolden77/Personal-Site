@@ -53,8 +53,6 @@ const Layout = ({ children, className, additionalStyles, path }) => {
           style={additionalStyles}
         >
           {children}
-        </main>
-
         <footer>
           <h3>
             <a
@@ -75,6 +73,8 @@ const Layout = ({ children, className, additionalStyles, path }) => {
             </a>
           </h3>
         </footer>
+        </main>
+
       </div>
     </>
   );

@@ -638,6 +638,7 @@ pre tt:after {
   height: 100%;
   /* padding: 10px 0px; */
   margin: 0px;
+  overflow: scroll;
   text-align: center;
   width: 100%;
 }
