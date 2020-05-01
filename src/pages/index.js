@@ -29,7 +29,7 @@ const IndexPage = ({ path }) => (
         <br />
       </h4>
       <h1>
-        <FontAwesomeIcon icon={faHandPointDown} />
+        <FontAwesomeIcon width="50px" icon={faHandPointDown} />
       </h1>
     </div>
     <div
