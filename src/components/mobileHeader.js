@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import Logo from '../images/chris-logo.png';
 
-const MobileHeader = ({ menuLinks, path, siteTitle }) => {
+const MobileHeader = ({ menuLinks, path }) => {
   const [isMobileMenuOpen, setMobileMenuState] = useState(false);
   
   const assignClass = link => {

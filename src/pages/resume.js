@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -13,8 +12,9 @@ const ResumePage = ({ path }) => (
       </h1>
     </div> */}
       <iframe
-        src="https://chrisgolden77.github.io/Resume/Chris_Golden_Resume.pdf"
         className="resumeIframe"
+        src="https://chrisgolden77.github.io/Resume/Chris_Golden_Resume.pdf"
+        title="resume"
       />
   </Layout>
 );

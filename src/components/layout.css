@@ -696,7 +696,7 @@ pre tt:after {
     position: fixed;
     right: 5px;
     top: 5px;
-    width: 105px;
+    width: 100px;
     z-index: 10;
   }
   /* .mobile-resume-title {
@@ -709,6 +709,10 @@ pre tt:after {
   .resumeIframe {
     height: 99.5% !important;
     margin: 0px !important;
+  }
+  #home-paragraph {
+    width: 300px;
+    margin: auto;
   }
 }
 
@@ -814,16 +818,27 @@ pre tt:after {
   height: 100%;
   background-image: url('../images/Orange-Desert.png') !important;
   background-size: cover !important;
-  background-position: top left !important;
+  background-position: bottom right !important;
 }
 /* **********HOME PAGE*********** */
 .home {
-  padding: 10px;
+  /* padding: 10px; */
 }
-
+#home-paragraph{
+  max-width: 500px;
+  margin: auto;
+}
 #alternate-main {
   background: black;
   height: 100%;
+}
+#personal-picture {
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin: 50px;
+
+  width: 200px;
 }
 /* **************RESUME**************** */
 
@@ -835,4 +850,24 @@ pre tt:after {
   height: 100% !important;
   border: none;
   margin-bottom: 0px !important;
+}
+/* ******** FOOTER ******* */
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0.13vw;
+  width: 100vw;
+  height: 40px;
+  margin-bottom: 0px !important;
+}
+.footer-link {
+  color: white;
+  margin: 10px;
+}
+.footer-link:hover {
+  color: lightgray;
 }

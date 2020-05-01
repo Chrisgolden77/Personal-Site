@@ -5,9 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import Header from './header';
 import MobileHeader from './mobileHeader';
@@ -53,14 +55,26 @@ const Layout = ({ children, className, additionalStyles, path }) => {
           {children}
         </main>
 
-        {/* <footer
-          style={{
-            textAlign: 'center',
-            borderTop: '1px solid #ffffffa3',
-          }}
-        >
-          FOOTER
-        </footer> */}
+        <footer>
+          <h3>
+            <a
+              className="footer-link"
+              href="https://www.linkedin.com/in/christopher-golden/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
+          </h3>
+          <h3>
+            <a
+              className="footer-link"
+              href="https://github.com/Chrisgolden77/Personal-Site"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </h3>
+        </footer>
       </div>
     </>
   );
