@@ -680,6 +680,9 @@ pre tt:after {
     width: 80px !important;
     margin: 10px auto !important;
   }
+  #layout { 
+    background-position: bottom left !important;
+  }
   #main {
     border-top: none;
   }
@@ -821,7 +824,7 @@ pre tt:after {
   height: 100%;
   background-image: url('../images/Orange-Desert.png') !important;
   background-size: cover !important;
-  background-position: bottom center !important;
+  background-position: bottom center;
 }
 /* **********HOME PAGE*********** */
 #home-content {
