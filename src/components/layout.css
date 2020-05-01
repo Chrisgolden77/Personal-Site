@@ -842,7 +842,7 @@ pre tt:after {
 }
 #home-hero-paragraph{
   max-width: 500px;
-  margin: auto 10px;
+  margin: auto;
 }
 #alternate-main {
   background: black;
