@@ -31,7 +31,6 @@ const Layout = ({ children, className, additionalStyles, path }) => {
   `);
 
   return (
-    <>
       <div id="layout">
         <header>
           <Header
@@ -54,7 +53,7 @@ const Layout = ({ children, className, additionalStyles, path }) => {
         >
           {children}
         <footer>
-          <h3>
+          <h2>
             <a
               className="footer-link"
               href="https://www.linkedin.com/in/christopher-golden/"
@@ -62,8 +61,8 @@ const Layout = ({ children, className, additionalStyles, path }) => {
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
-          </h3>
-          <h3>
+          </h2>
+          <h2>
             <a
               className="footer-link"
               href="https://github.com/Chrisgolden77/Personal-Site"
@@ -71,12 +70,11 @@ const Layout = ({ children, className, additionalStyles, path }) => {
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
-          </h3>
+          </h2>
         </footer>
         </main>
 
       </div>
-    </>
   );
 };
 
