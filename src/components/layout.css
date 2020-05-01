@@ -698,15 +698,16 @@ pre tt:after {
     height: fit-content;
     padding: 1px;
     position: fixed;
-    right: 5px;
+    left: 5px;
     top: 5px;
     width: 100px;
     z-index: 10;
   }
   /* .mobile-resume-title {
     display: block !important;
-  } */
-  .mobile-page-title {
+    height: 50px !important;
+  }
+  .mobile-page-title { */
     padding-top: 3rem;
     margin-top: 0px !important;
   }
@@ -841,7 +842,7 @@ pre tt:after {
 }
 #home-hero-paragraph{
   max-width: 500px;
-  margin: auto;
+  margin: auto 10px;
 }
 #alternate-main {
   background: black;

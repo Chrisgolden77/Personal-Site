@@ -11,10 +11,11 @@ const ResumePage = ({ path }) => (
         My Resume
       </h1>
     </div> */}
-      <embed
+      <iframe
         className="resumeIframe"
         src="https://chrisgolden77.github.io/Resume/Chris_Golden_Resume.pdf"
         title="resume"
+        scrolling='no'
       />
   </Layout>
 );
