@@ -706,8 +706,8 @@ pre tt:after {
   /* .mobile-resume-title {
     display: block !important;
     height: 50px !important;
-  }
-  .mobile-page-title { */
+  }*/
+  .mobile-page-title { 
     padding-top: 3rem;
     margin-top: 0px !important;
   }
