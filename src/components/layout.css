@@ -861,7 +861,7 @@ pre tt:after {
 .mobile-resume-title {
   display: none;
 }
-.resumeIframe {
+.resume-iframe {
   width: 100%;
   height: calc(100% - 43px)!important;
   border: none;
