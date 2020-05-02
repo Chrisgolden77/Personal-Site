@@ -769,6 +769,7 @@ pre tt:after {
 }
 .header-logo {
   width: 70px;
+  height: 70px !important;
   margin: auto;
 }
 
