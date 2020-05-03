@@ -15,23 +15,23 @@ const Header = ({ menuLinks, path, siteTitle }) => {
   const renderMenuLinks = () =>
     menuLinks.map(link => {
       return (
-        <Link className={assignClass(link.link)} to={link.link}>
-          {link.name}
-        </Link>
+        <div className="header-link-wrapper" id={link.link}>
+          <Link id={link.name} className={assignClass(link.link)} to={link.link}>
+            {link.name}
+          </Link>
+        </div>
       );
     });
 
   return (
     <header id="header">
-      <div id="header-wrapper">
-        <div>
-          <Link className={assignClass('/')} to="/">
-            <img src={Logo} className="header-logo" />
-          </Link>
-        </div>
-
-        <div id="header-links">{renderMenuLinks()}</div>
+      <div id="home-link-wrapper">
+        <Link className={assignClass('/')} to="/">
+          <img src={Logo} className="header-logo" />
+        </Link>
       </div>
+
+      <div id="header-links">{renderMenuLinks()}</div>
     </header>
   );
 };

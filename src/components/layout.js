@@ -54,7 +54,7 @@ const Layout = ({ children, className, additionalStyles, path }) => {
           {children}
         <footer>
           <h2>
-            <a
+            <a  
               className="footer-link"
               href="https://www.linkedin.com/in/christopher-golden/"
               target="_blank"
