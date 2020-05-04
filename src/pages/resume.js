@@ -1,29 +1,30 @@
+import { Button } from 'gatsby';
 import React from 'react';
-import { MobilePDFReader} from 'react-read-pdf';
+
 import Layout from '../components/layout';
+import Resume from '../images/Chris_Golden_Resume.pdf';
 import SEO from '../components/seo';
 
 const ResumePage = ({ path }) => (
   <Layout path={path}>
     <SEO title="Resume " />
     <embed
-      alt="Chris GOlden's Resume"
+      alt="Chris Golden's Resume"
       className="resume-iframe"
-      src="https://chrisgolden77.github.io/Resume/Chris_Golden_Resume.pdf"
+      src={Resume}
       title="resume"
       scrolling="no"
-    ></embed>
-    <div id="mobile-pdf-viewer">
-      <MobilePDFReader
-        page={1}
-        id="mobile-pdf-view"
-        width="100vw"
-        height="1000px"
-        showAllPage
-        // className="resume-iframe"
-        url={"https://chrisgolden77.github.io/Resume/Chris_Golden_Resume.pdf"}
-      />
-    </div>
+    />
+    {/* <div id="mobile-resume-viewer">
+      Sorry, But your browser doesn't support mobile pdf viewers.
+      <br /> To download my Resume, Click the link below.
+      <button
+        class="primary-button"
+        type="button"
+        onSubmit={() => {}}
+        text="DOWNLOAD RESUME"
+      >Download <br/>Resume</button>
+    </div> */}
   </Layout>
 );
 
