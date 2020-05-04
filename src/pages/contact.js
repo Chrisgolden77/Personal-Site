@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -9,34 +9,26 @@ const ContactPage = ({ path }) => (
     <div className="mobile-page-title"></div>
     <h1>Want to get ahold of me?</h1>
     <p>Drop me a line through email! </p>
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>
-          Your Name: <input type="text" name="name" />
-        </label>
-      </p>
-      <p>
-        <label>
-          Your Email: <input type="email" name="email" />
-        </label>
-      </p>
-      <p>
-        <label>
-          Your Role:{' '}
-          <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select>
-        </label>
-      </p>
-      <p>
-        <label>
-          Message: <textarea name="message"></textarea>
-        </label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify
+      data-netlify-honeypot="bot-field"
+      style={{
+        height: '500px',
+        width: '500px',
+        display: 'flex',
+        flexDirection: 'column',
+        margin: 'auto',
+        justifyContent: 'space-evenly',
+      }}
+    >
+      <input type="text" name="name" placeholder="Your Name" margin="10px" />
+      <input type="email" name="email" placeholder="Your Email" />
+      <textarea name="message" placeholder="Message for me"></textarea>
+      <button type="submit" >
+        Send
+      </button>
     </form>
     {/* <Link to="/">Go back to the homepage</Link> */}
   </Layout>
