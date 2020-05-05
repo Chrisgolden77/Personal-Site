@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&');
 }
 const ContactPage = ({ path }) => {
@@ -20,13 +20,14 @@ const ContactPage = ({ path }) => {
     setFormData({ ...formData, [input]: value });
   };
   const handleSubmit = async form => {
-
     try {
       await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlenconded' },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({
-          'form-name': 'contact', ...form })
+          'form-name': 'contact',
+          ...formData,
+        }),
       });
       console.log('success');
       setIsMessageSent(true);
@@ -47,14 +48,13 @@ const ContactPage = ({ path }) => {
       <div className="mobile-page-title"></div>
       <h1>Let's chat!</h1>
       <form
-        data-netlify
+        data-netlify="true"
         data-netlify-honeypot="bot-field"
         id="contact-form"
         method="POST"
         name="contact"
         onSubmit={e => {
-          e.preventDefault();
-          handleSubmit(e.target);
+          handleSubmit(e.target)
         }}
       >
         <input type="hidden" name="form-name" value="contact" />
