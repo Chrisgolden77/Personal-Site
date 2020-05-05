@@ -29,14 +29,14 @@ const IndexPage = ({ path }) => (
           the github link below.
         </h3>
       </div>
-      <br />
       <h4 float="bottom">
         Keep scrolling for personal stats.
         <br />
-      </h4>
-      <h1>
-        <FontAwesomeIcon width="30px" icon={faHandPointDown} />
-      </h1>
+      </h4> 
+      <div style={{fontSize: '75px'}}>
+        {/* <FontAwesomeIcon width="30px" icon={faHandPointDown} /> */}
+        ⇣
+      </div>
     </div>
     <div id="home-content">
       <div id="timeline">

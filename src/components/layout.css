@@ -325,13 +325,27 @@ footer h2 {
 }
 
 /* ********CONTACT********* */
-#contact-form {
+.contact-error {
+  border-radius: 4px;
+  color: white !important;
+  background-color: #f94949;
+  padding: 8px;
+  max-width: 400px;
+  margin: auto;
+}
+.contact-form {
   display: flex;
   flex-direction: column;
   height: 500px;
   justify-content: space-evenly;
   max-width: 95%;
   margin: auto;
+  width: 500px;
+}
+.contact-success {
+  height: 500px;
+  max-width: 95%;
+  margin: 100px auto 0px auto;
   width: 500px;
 }
 input {
@@ -356,7 +370,6 @@ textarea {
   display: flex;
   justify-content: flex-end !important;
   width: 100%;
-
 }
 button {
   background-color: darkred !important;
@@ -371,4 +384,9 @@ button {
 button:hover {
   background-color: brown !important;
   cursor: pointer;
+}
+#ship-icon {
+  /* height: 100px; */
+  width: 200px;
+  margin: auto;
 }

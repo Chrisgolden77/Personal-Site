@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from 'react';
 
+import Ship from '../images/transport.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -20,6 +21,7 @@ const ContactPage = ({ path }) => {
     setFormData({ ...formData, [input]: value });
   };
   const handleSubmit = async form => {
+    setErrorMessage('');
     try {
       await fetch('/', {
         method: 'POST',
@@ -29,7 +31,7 @@ const ContactPage = ({ path }) => {
           ...formData,
         }),
       });
-      console.log('success');
+      console.log('Successfully sent Chris a message!');
       setIsMessageSent(true);
       setFormData({
         name: '',
@@ -37,53 +39,79 @@ const ContactPage = ({ path }) => {
         message: '',
       });
     } catch (error) {
-      console.log(error);
-      setErrorMessage(error);
+      console.error(error);
+      setErrorMessage(`error=${error}`);
     }
   };
 
   return (
     <Layout path={path}>
       <SEO title="Contact Me" />
-      <div className="mobile-page-title"></div>
-      <h1>Let's chat!</h1>
-      <form
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        id="contact-form"
-        method="POST"
-        name="contact"
-        onSubmit={e => {
-          handleSubmit(e.target)
-          e.preventDefault();
-        }}
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <input
-          name="name"
-          onChange={e => handleChange(e.target.name, e.target.value)}
-          placeholder="Your Name"
-          value={formData.name}
-          type="text"
-        />
-        <input
-          name="email"
-          onChange={e => handleChange(e.target.name, e.target.value)}
-          placeholder="Your Email"
-          value={formData.email}
-          type="email"
-        />
-        <textarea
-          name="message"
-          onChange={e => handleChange(e.target.name, e.target.value)}
-          placeholder="What do you want to say? "
-          value={formData.message}
-        ></textarea>
-        <div id="contact-btn-wrapper">
-          <button type="submit">Send</button>
+      {isMessageSent ? (
+        <div className="contact-success">
+          <img id="ship-icon" src={Ship} />
+          <h1>Your message is on it's way!</h1>
+          <h3>
+            Thanks for reaching out ! <br />
+            I'll be in touch with you soon. In the mean while, enjoy peeking
+            around the rest of my site.
+          </h3>
         </div>
-      </form>
-      {/* <Link to="/">Go back to the homepage</Link> */}
+      ) : (
+        <>
+          {/* <div className="mobile-page-title"></div> */}
+          <h1 style={{margin: '0px auto'}}>
+          <div style={{fontSize: '110px',height: '120px'}}>
+            👨🏻‍🚀
+            </div>
+            Let's chat!
+             </h1>
+          {errorMessage ? (
+            <h4 className="contact-error">
+              There was an issue sending this message💀!
+            </h4>
+          ) : null}
+          <form
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            className="contact-form"
+            method="POST"
+            name="contact"
+            onSubmit={e => {
+              handleSubmit(e.target);
+              e.preventDefault();
+            }}
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input
+              name="name"
+              onChange={e => handleChange(e.target.name, e.target.value)}
+              placeholder="Your Name"
+              required
+              type="text"
+              value={formData.name}
+            />
+            <input
+              name="email"
+              onChange={e => handleChange(e.target.name, e.target.value)}
+              placeholder="Your Email"
+              required
+              type="email"
+              value={formData.email}
+            />
+            <textarea
+              name="message"
+              onChange={e => handleChange(e.target.name, e.target.value)}
+              placeholder="What do you want to say? "
+              required
+              value={formData.message}
+            ></textarea>
+            <div id="contact-btn-wrapper">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </>
+      )}
     </Layout>
   );
 };
