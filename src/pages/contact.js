@@ -19,32 +19,35 @@ const ContactPage = ({ path }) => {
   const handleChange = (input, value) => {
     setFormData({ ...formData, [input]: value });
   };
-  const handleSubmit = async form => {
-    console.log(encode({
-      'form-name': form.getAttribute('name'),
-      ...formData,
-    }));
-    
-    try {
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlenconded' },
-        body: encode({
-          'form-name': form.getAttribute('name'),
-          ...formData,
-        }),
+  const handleSubmit = form => {
+    console.log(
+      encode({
+        'form-name': form.getAttribute('name'),
+        ...formData,
+      })
+    );
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlenconded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...formData,
+      }),
+    })
+      .then(response => {
+        console.log('success', response);
+        setIsMessageSent(true);
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      })
+      .catch(error => {
+        console.log(error);
+        setErrorMessage(error);
       });
-      console.log('success');
-      setIsMessageSent(true);
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
-      });
-    } catch (error) {
-      console.log(error);
-      setErrorMessage(error);
-    }
   };
 
   return (
