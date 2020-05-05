@@ -11,7 +11,7 @@ Written Using:
 - Vector Icons from [Flaticon](https://flaticon.com)
 
 Attributing icons:
-
+astronaut and ship: 
 <h6>
   Icons made by{' '}
   <a

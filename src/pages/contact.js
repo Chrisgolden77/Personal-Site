@@ -1,8 +1,9 @@
 import React, { useReducer, useState } from 'react';
 
-import Ship from '../images/transport.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Astronaut from '../images/astronaut.png';
+import Ship from '../images/transport.png';
 
 function encode(data) {
   return Object.keys(data)
@@ -52,7 +53,7 @@ const ContactPage = ({ path }) => {
           <img id="ship-icon" src={Ship} />
           <h1>Your message is on it's way!</h1>
           <h3>
-            Thanks for reaching out ! <br />
+            Thanks for reaching out! <br />
             I'll be in touch with you soon. In the mean while, enjoy peeking
             around the rest of my site.
           </h3>
@@ -61,8 +62,11 @@ const ContactPage = ({ path }) => {
         <>
           {/* <div className="mobile-page-title"></div> */}
           <h1 style={{ margin: '10px auto 0px' }}>
-            <div style={{ fontSize: '100px', height: '106px' }}>👨🏻‍🚀</div>
-            Let's chat!
+          <img id="astronaut-icon" src={Astronaut} />
+            <br/>
+
+            {/* <div style={{ fontSize: '100px', height: '106px' }}>👨🏻‍🚀</div> */}
+            Make contact!
           </h1>
           {errorMessage ? (
             <h4 className="contact-error">

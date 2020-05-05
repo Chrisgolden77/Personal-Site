@@ -52,17 +52,18 @@ body {
     margin: 13px !important;
   }
   .header-link:hover {
-    margin: 0px !important;
+    margin: 1px !important;
+    
   }
   .active-link {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin: 1px !important;
   }
 
   #header-links {
     flex-direction: column !important;
-    justify-content: center;
-    margin: auto;
+    text-align: center !important;
+    justify-content: center !important;
+    margin: auto !important;
     width: 98% !important;
   }
   .header-logo {
@@ -94,7 +95,7 @@ body {
   }
   #mobile-header {
     background: rgba(0, 0, 0, 0.4) !important;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex !important;
     flex-direction: column;
     height: fit-content;
@@ -244,7 +245,7 @@ body {
   flex-direction: column;
   height: 100%;
   background-image: url('../images/Orange-Desert.png') !important;
-  background-size: 2400px !important;
+  background-size: cover;
   background-position: bottom center;
 }
 /* **********HOME PAGE*********** */
@@ -387,6 +388,10 @@ button:hover {
 }
 #ship-icon {
   /* height: 100px; */
-  width: 200px;
   margin: auto;
+  width: 200px;
+}
+#astronaut-icon {
+  width: 150px;
+  margin: 10px auto 0px;
 }
