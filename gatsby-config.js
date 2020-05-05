@@ -3,8 +3,8 @@ module.exports = {
     title: `Chris Golden`,
     menuLinks: [
       {
-        name: 'About',
-        link: '/about/',
+        name: 'Skills',
+        link: '/skills/',
       },
       // {
       //   name: 'My Apps',

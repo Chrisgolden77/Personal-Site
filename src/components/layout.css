@@ -166,14 +166,11 @@ body {
   font-size: larger;
 }
 .header-link:hover {
-  /* display: flex; */
   background-color: rgba(0, 0, 0, 0.171);
   border: 2px solid white !important;
   border-radius: 10px !important;
-  padding: 10px !important;
-  /* margin-left: 0px !important; */
-  /* margin-right: 0px !important; */
   color: rgb(226, 226, 226);
+  padding: 10px !important;
 }
 .header-logo {
   width: 80px !important;
