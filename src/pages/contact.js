@@ -60,12 +60,10 @@ const ContactPage = ({ path }) => {
       ) : (
         <>
           {/* <div className="mobile-page-title"></div> */}
-          <h1 style={{margin: '0px auto'}}>
-          <div style={{fontSize: '110px',height: '120px'}}>
-            👨🏻‍🚀
-            </div>
+          <h1 style={{ margin: '10px auto 0px' }}>
+            <div style={{ fontSize: '100px', height: '106px' }}>👨🏻‍🚀</div>
             Let's chat!
-             </h1>
+          </h1>
           {errorMessage ? (
             <h4 className="contact-error">
               There was an issue sending this message💀!
