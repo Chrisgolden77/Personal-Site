@@ -27,27 +27,24 @@ const ContactPage = ({ path }) => {
       })
     );
 
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlenconded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...formData,
-      }),
-    })
-      .then(response => {
-        console.log('success', response);
-        setIsMessageSent(true);
-        setFormData({
-          name: '',
-          email: '',
-          message: '',
-        });
-      })
-      .catch(error => {
-        console.log(error);
-        setErrorMessage(error);
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlenconded' },
+        body: encode({
+          'form-name': 'contact', ...formData })
       });
+      console.log('success');
+      setIsMessageSent(true);
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
+    } catch (error) {
+      console.log(error);
+      setErrorMessage(error);
+    }
   };
 
   return (
