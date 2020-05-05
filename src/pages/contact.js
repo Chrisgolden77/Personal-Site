@@ -26,7 +26,7 @@ const ContactPage = ({ path }) => {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlenconded' },
         body: encode({
-          'form-name': 'contact', ...formData })
+          'form-name': 'contact', ...form })
       });
       console.log('success');
       setIsMessageSent(true);
