@@ -20,6 +20,11 @@ const ContactPage = ({ path }) => {
     setFormData({ ...formData, [input]: value });
   };
   const handleSubmit = async form => {
+    console.log(encode({
+      'form-name': form.getAttribute('name'),
+      ...formData,
+    }));
+    
     try {
       await fetch('/', {
         method: 'POST',
@@ -29,6 +34,7 @@ const ContactPage = ({ path }) => {
           ...formData,
         }),
       });
+      console.log('success');
       setIsMessageSent(true);
       setFormData({
         name: '',
@@ -36,6 +42,7 @@ const ContactPage = ({ path }) => {
         message: '',
       });
     } catch (error) {
+      console.log(error);
       setErrorMessage(error);
     }
   };
@@ -61,18 +68,21 @@ const ContactPage = ({ path }) => {
           name="name"
           onChange={e => handleChange(e.target.name, e.target.value)}
           placeholder="Your Name"
+          value={formData.name}
           type="text"
         />
         <input
           name="email"
           onChange={e => handleChange(e.target.name, e.target.value)}
           placeholder="Your Email"
+          value={formData.email}
           type="email"
         />
         <textarea
           name="message"
           onChange={e => handleChange(e.target.name, e.target.value)}
           placeholder="What do you want to say? "
+          value={formData.message}
         ></textarea>
         <div id="contact-btn-wrapper">
           <button type="submit">Send</button>
