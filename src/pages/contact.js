@@ -19,13 +19,7 @@ const ContactPage = ({ path }) => {
   const handleChange = (input, value) => {
     setFormData({ ...formData, [input]: value });
   };
-  const handleSubmit = form => {
-    console.log(
-      encode({
-        'form-name': form.getAttribute('name'),
-        ...formData,
-      })
-    );
+  const handleSubmit = async form => {
 
     try {
       await fetch('/', {
