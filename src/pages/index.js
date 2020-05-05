@@ -18,14 +18,20 @@ const IndexPage = ({ path }) => (
       />
       <div id="home-hero-paragraph">
         <h1>Hey there,</h1>
-        My name is Chris Golden and you found my personal site!
-        <br />
-        Take a look around, drop me a line, or take a peek at the code with the
-        github link below.
+        <h3>
+          My name is{' '}
+          <strong>
+            <em>Chris Golden</em>
+          </strong>{' '}
+          and you found my personal site!
+          <br />
+          Take a look around, drop me a line, or take a peek at the code with
+          the github link below.
+        </h3>
       </div>
       <br />
       <h4 float="bottom">
-        scroll down
+        Keep scrolling for personal stats.
         <br />
       </h4>
       <h1>
@@ -34,6 +40,8 @@ const IndexPage = ({ path }) => (
     </div>
     <div id="home-content">
       <div id="timeline">
+        {' '}
+        <br/>
         fjkdsl;a dsajfkl;asj fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a
         dsajfkl;asj fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
         fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
@@ -41,15 +49,16 @@ const IndexPage = ({ path }) => (
         fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
         fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
         fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
+        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
+        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
+        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
+        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
+        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
+        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
+        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
+        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
         fdla;jfkl;dsajklfdsjkl;faHandPointDown
-        fjkdsl;a dsajfkl;asj fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a
-        dsajfkl;asj fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown
+        
       </div>
     </div>
   </Layout>

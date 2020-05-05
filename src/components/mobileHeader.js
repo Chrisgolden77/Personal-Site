@@ -6,7 +6,7 @@ import Logo from '../images/chris-logo.png';
 
 const MobileHeader = ({ menuLinks, path }) => {
   const [isMobileMenuOpen, setMobileMenuState] = useState(false);
-  
+
   const assignClass = link => {
     return path === link ? 'header-link active-link' : 'header-link';
   };
@@ -14,7 +14,7 @@ const MobileHeader = ({ menuLinks, path }) => {
     menuLinks.map(link => {
       return (
         <Link className={assignClass(link.link)} to={link.link}>
-          {link.name}
+          <strong>{link.name}</strong>
         </Link>
       );
     });
@@ -31,8 +31,8 @@ const MobileHeader = ({ menuLinks, path }) => {
       </h1>
       {isMobileMenuOpen ? (
         <div id="header-links">
-          <Link className={assignClass('/')} to='/'>
-            Home
+          <Link className={assignClass('/')} to="/">
+            <strong>Home</strong>
           </Link>
           {renderMenuLinks()}
         </div>

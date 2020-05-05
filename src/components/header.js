@@ -17,7 +17,9 @@ const Header = ({ menuLinks, path, siteTitle }) => {
       return (
         <div className="header-link-wrapper" id={link.link}>
           <Link id={link.name} className={assignClass(link.link)} to={link.link}>
-            {link.name}
+            <strong>
+              {link.name}
+              </strong>
           </Link>
         </div>
       );
