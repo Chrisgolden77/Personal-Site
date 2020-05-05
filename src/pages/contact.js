@@ -55,6 +55,7 @@ const ContactPage = ({ path }) => {
         name="contact"
         onSubmit={e => {
           handleSubmit(e.target)
+          e.preventDefault();
         }}
       >
         <input type="hidden" name="form-name" value="contact" />
