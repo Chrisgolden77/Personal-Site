@@ -1,8 +1,8 @@
-import { Button } from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/layout';
 import Resume from '../images/Chris_Golden_Resume.pdf';
+import ResumeMobile from '../images/Chris_Golden_Resume.png';
 import SEO from '../components/seo';
 
 const ResumePage = ({ path }) => (
@@ -11,21 +11,34 @@ const ResumePage = ({ path }) => (
     <embed
       alt="Chris Golden's Resume"
       className="resume-iframe"
+      scrolling="no"
       src={Resume}
       title="resume"
-      scrolling="no"
     />
-    {/* <div id="mobile-resume-viewer">
-      Sorry, But your browser doesn't support mobile pdf viewers.
-      <br /> To download my Resume, Click the link below.
+    <div id="mobile-resume-viewer" style={{ height: '100vh', backgroundColor: 'rgb(36, 60, 87)', textAlign: 'center'}}>
+      <img 
+        src={ResumeMobile} 
+        style={{
+          maxWidth: '100vw', 
+          width: '500px', 
+          verticalAlign: 'middle',
+          margin: 'auto'
+        }}/>
+        <div style={{position: 'absolute', top: '25px', right: '10px'}}>
+          download:  
       <button
-        class="primary-button"
-        type="button"
-        onSubmit={() => {}}
-        text="DOWNLOAD RESUME"
-      >Download <br/>Resume</button>
-    </div> */}
+        
+        // type="button"
+        onSubmit={() => {console.log('downloading pdf')}}
+      >
+        <span alt="download icon">
+        📥
+        </span>
+      </button>
+        </div>
+    </div>
   </Layout>
 );
 
 export default ResumePage;
+

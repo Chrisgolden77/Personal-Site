@@ -9,6 +9,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-scrollbar: none;
 }
 html,
 body,
@@ -21,7 +22,10 @@ body,
 body {
   margin: 0px;
 }
-
+/* ::-webkit-scrollbar {
+  width: 0px !important;
+  display: none;
+} */
 #main {
   align-self: center;
   height: 100%;
@@ -283,8 +287,12 @@ body {
 }
 /* **************RESUME**************** */
 
-#mobile-pdf-viewer {
+/* #mobile-resume-viewer {
   display: none;
+} */
+#mobile-resume-viewer svg {
+  max-width: 100vw !important;
+  max-height: 100vh !important;
 }
 .resume-iframe {
   width: 100%;
@@ -293,10 +301,7 @@ body {
   border: none;
   /* margin-bottom: 40px !important; */
 }
-canvas {
-  max-width: 100vw !important;
-  max-height: 100vh !important;
-}
+
 /* ******** FOOTER ******* */
 footer {
   color: white;
