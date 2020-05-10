@@ -57,7 +57,6 @@ body {
   }
   .header-link:hover {
     margin: 1px !important;
-    
   }
   .active-link {
     margin: 1px !important;
@@ -91,6 +90,7 @@ body {
     display: flex;
     margin: auto 10px !important;
   }
+
   #mobile-pdf-viewer {
     display: block !important;
   }
@@ -124,6 +124,18 @@ body {
   }
   #home-paragraph {
     width: 300px;
+    margin: auto;
+  }
+  #mobile-resume-viewer {
+    display: flex !important;
+    height: 92vh;
+    background-color: rgb(36, 60, 87);
+    text-align: center;
+  }
+  #mobile-resume-image {
+    max-width: 100vw;
+    width: 500px;
+    vertical-align: middle;
     margin: auto;
   }
 }
@@ -287,12 +299,8 @@ body {
 }
 /* **************RESUME**************** */
 
-/* #mobile-resume-viewer {
+#mobile-resume-viewer {
   display: none;
-} */
-#mobile-resume-viewer svg {
-  max-width: 100vw !important;
-  max-height: 100vh !important;
 }
 .resume-iframe {
   width: 100%;
@@ -374,7 +382,7 @@ textarea {
   justify-content: flex-end !important;
   width: 100%;
 }
-button {
+.button {
   background-color: darkred !important;
   border: 0 !important;
   border-radius: 4px;

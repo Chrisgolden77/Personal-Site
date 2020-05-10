@@ -13,7 +13,7 @@ const MobileHeader = ({ menuLinks, path }) => {
   const renderMenuLinks = () =>
     menuLinks.map(link => {
       return (
-        <Link className={assignClass(link.link)} to={link.link}>
+        <Link key={link.link} className={assignClass(link.link)} to={link.link}>
           <strong>{link.name}</strong>
         </Link>
       );

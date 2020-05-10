@@ -109,7 +109,7 @@ const ContactPage = ({ path }) => {
               value={formData.message}
             ></textarea>
             <div id="contact-btn-wrapper">
-              <button type="submit">Send</button>
+              <button className="button" type="submit">Send</button>
             </div>
           </form>
         </>
