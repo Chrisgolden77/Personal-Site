@@ -62,9 +62,8 @@ const ContactPage = ({ path }) => {
         <>
           {/* <div className="mobile-page-title"></div> */}
           <h1 style={{ margin: '10px auto 0px' }}>
-          <img id="astronaut-icon" src={Astronaut} />
-            <br/>
-
+            <img id="astronaut-icon" src={Astronaut} />
+            <br />
             {/* <div style={{ fontSize: '100px', height: '106px' }}>👨🏻‍🚀</div> */}
             Make contact!
           </h1>
@@ -109,7 +108,9 @@ const ContactPage = ({ path }) => {
               value={formData.message}
             ></textarea>
             <div id="contact-btn-wrapper">
-              <button className="button" type="submit">Send</button>
+              <button className="button" type="submit">
+                Send
+              </button>
             </div>
           </form>
         </>
