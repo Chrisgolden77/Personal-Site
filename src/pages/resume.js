@@ -20,13 +20,7 @@ const ResumePage = ({ path }) => {
       />
       <div id="mobile-resume-viewer">
         <div
-          style={{
-            display: 'flex',
-            height: '70px',
-            width: '100%',
-            justifyContent: 'flex-end',
-            alignItems: 'center',
-          }}
+        id="mobile-resume-header"
         >
           <strong>Download Resume: </strong>
           <a href={Resume} download style={{ height: '40px' }}>
