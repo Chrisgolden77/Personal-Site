@@ -17,31 +17,31 @@ const IndexPage = ({ path }) => (
         src="https://media-exp1.licdn.com/dms/image/C5603AQHsMjURLrwZfg/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=OQ__yff_40-knIDiqERm-oZv3Sx2VZ1Lwz-MuLQEqeE"
       />
       <div id="home-hero-paragraph">
-        <h1>Hey there,</h1>
-        <h3>
-          My name is{' '}
-          <strong>
-            <em>Chris Golden</em>
-          </strong>{' '}
-          and you found my personal site!
+        <h1>
+          I'm
+          <em> Chris Golden </em>
           <br />
+          Welcome to my personal site!
+        </h1>
+        <h3>
+          I'm a full stack developer with a passion for learning, problem solving, and collaborating.
+          
           Take a look around, drop me a line, or take a peek at the code with
           the github link below.
         </h3>
-      </div>
-      <h4 float="bottom">
-        Keep scrolling for personal stats.
-        <br />
-      </h4> 
-      <div style={{fontSize: '75px'}}>
-        {/* <FontAwesomeIcon width="30px" icon={faHandPointDown} /> */}
-        ⇣
+        <div style={{ fontSize: '75px' }}>
+          {/* <FontAwesomeIcon width="30px" icon={faHandPointDown} /> */}
+        </div>
+        <h4 float="bottom">
+          Keep scrolling for personal stats.
+          <br />
+        </h4>
       </div>
     </div>
     <div id="home-content">
       <div id="timeline">
         {' '}
-        <br/>
+        <br />
         fjkdsl;a dsajfkl;asj fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a
         dsajfkl;asj fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
         fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
@@ -58,7 +58,6 @@ const IndexPage = ({ path }) => (
         fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
         fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
         fdla;jfkl;dsajklfdsjkl;faHandPointDown
-        
       </div>
     </div>
   </Layout>
