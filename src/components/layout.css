@@ -22,10 +22,9 @@ body,
 body {
   margin: 0px;
 }
-/* ::-webkit-scrollbar {
-  width: 0px !important;
-  display: none;
-} */
+::-webkit-scrollbar {
+  display: none !important;
+}
 #main {
   align-self: center;
   height: 100%;
@@ -34,7 +33,7 @@ body {
   text-align: center;
   width: 100%;
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 600px) {
   .app-tile {
     margin: 10px auto !important;
     width: 80% !important;
@@ -73,13 +72,16 @@ body {
     width: 80px !important;
     margin: 10px auto !important;
   }
+  #home-hero-wrapper {
+    min-height: 100vh !important;
+  }
   #home-hero {
-    height: 100vh !important;
+    margin-top: 0px !important;
+    justify-content: space-evenly !important;
   }
   #home-hero-paragraph {
     max-width: 95% !important;
-    /* text-align: left !important; */
-    /* margin: auto; */
+    margin: 0 auto !important;
   }
   #personal-picture {
     margin: 5rem auto 0 !important;
@@ -183,6 +185,8 @@ body {
   display: flex;
   justify-content: space-between;
   height: 100px;
+  margin: auto;
+  max-width: 1300px;
 }
 .header-link {
   color: white;
@@ -206,10 +210,7 @@ body {
 #header-wrapper {
   color: white;
   display: flex;
-  /* position: absolute;
-  width: 100%; */
   flex-wrap: wrap;
-  /* height: 100% !important; */
   justify-content: space-between;
   margin: 7px 15px 7px 15px;
 }
@@ -279,12 +280,21 @@ body {
   margin: auto;
   /* padding: 200px 10px; */
 }
-#home-hero {
-  display: inline-block;
+#home-hero-wrapper {
+  display: flex;
   width: 100%;
-  height: fit-content;
   min-height: calc(100vh - 100px);
-  /* margin-top: 50px; */
+  height: fit-content;
+  justify-content: center;
+}
+#home-hero {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-evenly;
+  height: fit-content;
+  margin: 5em auto ;
 }
 #home-hero-paragraph {
   display: inline-block;
@@ -300,7 +310,7 @@ body {
   height: 200px;
   border: 2px solid white;
   border-radius: 100px;
-  margin: 70px 100px 0;
+  margin: auto;
   width: 200px;
 }
 #timeline {
