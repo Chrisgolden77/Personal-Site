@@ -5,3 +5,10 @@
  */
 
 // You can delete this file if you're not using it
+module.exports = {
+  onCreateWebpackConfig: params => {
+    const webpackConfig = params.getConfig();
+    delete webpackConfig.resolve.alias['core-js'];
+    params.actions.replaceWebpackConfig(webpackConfig);
+  }
+};
