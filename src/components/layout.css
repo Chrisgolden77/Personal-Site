@@ -60,7 +60,7 @@ body {
   .active-link {
     margin: 1px !important;
   }
-
+  
   #header-links {
     flex-direction: column !important;
     text-align: center !important;
@@ -148,6 +148,9 @@ body {
   #astronaut-icon {
     width: 130px;
     margin: 20% auto 0px !important;
+  }
+  #timeline {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -334,12 +337,12 @@ body {
 
 /* ******** FOOTER ******* */
 footer {
+  bottom: 0;
   color: white;
   display: flex;
   justify-content: center;
   position: fixed;
   text-align: center;
-  bottom: 0;
   width: 100vw;
   height: 50px;
   margin-bottom: 0px !important;
