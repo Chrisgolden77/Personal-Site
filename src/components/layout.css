@@ -60,7 +60,7 @@ body {
   .active-link {
     margin: 1px !important;
   }
-  
+
   #header-links {
     flex-direction: column !important;
     text-align: center !important;
@@ -73,6 +73,7 @@ body {
     margin: 10px auto !important;
   }
   #home-hero-wrapper {
+    background-color: rgba(0, 0, 0, 0.08);
     min-height: 100vh !important;
   }
   #home-hero {
@@ -80,11 +81,14 @@ body {
     justify-content: space-evenly !important;
   }
   #home-hero-paragraph {
+    font-size: 1em;
     max-width: 95% !important;
     margin: 0 auto !important;
   }
   #personal-picture {
-    margin: 5rem auto 0 !important;
+    margin: 9vh auto 0 !important;
+    width: 120px !important;
+    height: 120px !important;
   
   }
   #layout {
@@ -135,6 +139,7 @@ body {
   }
   #mobile-resume-viewer {
     display: flex !important;
+    flex-wrap: wrap;
     height: 92vh;
     background-color: rgb(36, 60, 87);
     text-align: center;
@@ -285,19 +290,21 @@ body {
 }
 #home-hero-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  margin: auto;
+  max-width: 1200px;
   min-height: calc(100vh - 100px);
   height: fit-content;
-  justify-content: center;
+  justify-content: space-around;
 }
 #home-hero {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1200px;
   justify-content: space-evenly;
   height: fit-content;
-  margin: 5em auto ;
+  margin: 5em auto 1em;
 }
 #home-hero-paragraph {
   display: inline-block;
@@ -333,7 +340,7 @@ body {
   height: calc(100% - 50px) !important;
   border: none;
   /* margin-bottom: 40px !important; */
-}
+} 
 
 /* ******** FOOTER ******* */
 footer {

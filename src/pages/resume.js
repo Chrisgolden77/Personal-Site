@@ -25,7 +25,7 @@ const ResumePage = ({ path }) => {
             height: '70px',
             width: '100%',
             justifyContent: 'flex-end',
-            alignItems: 'right',
+            alignItems: 'center',
           }}
         >
           <strong>Download Resume: </strong>
