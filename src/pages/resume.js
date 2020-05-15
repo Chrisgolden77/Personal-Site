@@ -1,5 +1,6 @@
 import React from 'react';
 
+import DownloadIcon from '../images/multimedia.png';
 import Layout from '../components/layout';
 import Resume from '../images/Chris_Golden_Resume.pdf';
 import ResumeMobile from '../images/Chris_Golden_Resume.png';
@@ -18,13 +19,18 @@ const ResumePage = ({ path }) => {
         title="resume"
       />
       <div id="mobile-resume-viewer">
-        <img id="mobile-resume-image" src={ResumeMobile} />
-        <div style={{ position: 'absolute', top: '25px', right: '10px' }}>
-          Download Resume: {' '}
-          <a className="button" href={Resume} download>
-            <span alt="download icon">📥</span>
+        <div
+        id="mobile-resume-header"
+        >
+          <strong>Download Resume: </strong>
+          <a href={Resume} download style={{ height: '40px' }}>
+            <img
+              src={DownloadIcon}
+              style={{ width: '50px', margin: 'auto 10px' }}
+            />
           </a>
         </div>
+        <img id="mobile-resume-image" src={ResumeMobile} />
       </div>
     </Layout>
   );
