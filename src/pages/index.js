@@ -31,7 +31,7 @@ const IndexPage = ({ path }) => (
         </div>
       </div>
           <div style={{height: 'fit-content', width: '130px'}}>
-      <hr></hr>
+      <hr style={{border: '1px solid white'}}></hr>
               <strong><em>keep scrolling</em></strong>
               <img src={Arrow} width=" 50px" height="50px"/>
           </div>

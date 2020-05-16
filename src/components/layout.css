@@ -73,8 +73,11 @@ body {
     margin: 10px auto !important;
   }
   #home-hero-wrapper {
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(0, 0, 0, 0.14);
     min-height: 100vh !important;
+  }
+  hr {
+    border-color: white !important;
   }
   #home-hero {
     margin-top: 0px !important;
