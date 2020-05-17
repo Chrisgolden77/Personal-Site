@@ -72,10 +72,10 @@ const ContactPage = ({ path }) => {
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               display: 'flex',
-              flexDirection: 'column-reverse'
+              flexDirection: 'column-reverse !important'
             }}
           >
-            <h1 style={{ margin: 0, height: '100%'}}>
+            <h1 style={{ margin: '0 !important'}}>
               {/* <img id="astronaut-icon" src={Astronaut} /> */}
               <br />
               {/* <div style={{ fontSize: '100px', height: '106px' }}>👨🏻‍🚀</div> */}
