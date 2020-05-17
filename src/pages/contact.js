@@ -62,18 +62,7 @@ const ContactPage = ({ path }) => {
         <>
           {/* <div className="mobile-page-title"></div> */}
           <div
-
-            style={{
-              height: '120px',
-              margin: '70px auto 10px',
-              textAlign: 'bottom',
-              backgroundImage: `url(${Astronaut})`,
-              backgroundSize: 'contain',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              display: 'flex',
-              flexDirection: 'column-reverse !important'
-            }}
+            id="contact-header"
           >
             <h1 style={{ margin: '0 !important'}}>
               {/* <img id="astronaut-icon" src={Astronaut} /> */}
