@@ -62,7 +62,9 @@ body {
   .active-link {
     margin: 1px !important;
   }
-
+  #contact-header {
+    margin: 70px auto 10px !important ;
+  }
   #header-links {
     flex-direction: column !important;
     text-align: center !important;
@@ -403,7 +405,7 @@ footer h2 {
 }
 #contact-header {
   height: 120px;
-  margin: 70px auto 10px;
+  margin: 10px auto;
   text-align: bottom;
   background-image: url('../images/astronaut.png');
   background-size: contain;
