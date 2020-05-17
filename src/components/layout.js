@@ -31,50 +31,51 @@ const Layout = ({ children, className, additionalStyles, path }) => {
   `);
 
   return (
-      <div id="layout">
-        <header>
-          <Header
-            menuLinks={data.site.siteMetadata.menuLinks}
-            path={path}
-            siteTitle={data.site.siteMetadata.title}
-          />
-          <MobileHeader
-            menuLinks={data.site.siteMetadata.menuLinks}
-            path={path}
-            siteTitle={data.site.siteMetadata.title}
-          />
-        </header>
-
-        <main
-          className={className}
-          id="main"
+    <div id="layout">
+      <header>
+        <Header
+          id="main-header"
+          menuLinks={data.site.siteMetadata.menuLinks}
           path={path}
-          style={additionalStyles}
-        >
-          {children}
-        <footer>
-          <h2>
-            <a  
-              className="footer-link"
-              href="https://www.linkedin.com/in/christopher-golden/"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
-          </h2>
-          <h2>
-            <a
-              className="footer-link"
-              href="https://github.com/Chrisgolden77/Personal-Site"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </h2>
-        </footer>
-        </main>
+          siteTitle={data.site.siteMetadata.title}
+        />
+        <MobileHeader
+          id="mobile-header"
+          menuLinks={data.site.siteMetadata.menuLinks}
+          path={path}
+          siteTitle={data.site.siteMetadata.title}
+        />
+      </header>
 
-      </div>
+      <main
+        className={className}
+        id="main"
+        path={path}
+        style={additionalStyles}
+      >
+        {children}
+      </main>
+      <footer id="main-footer">
+        <h2>
+          <a
+            className="footer-link"
+            href="https://www.linkedin.com/in/christopher-golden/"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
+        </h2>
+        <h2>
+          <a
+            className="footer-link"
+            href="https://github.com/Chrisgolden77/Personal-Site"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </h2>
+      </footer>
+    </div>
   );
 };
 
