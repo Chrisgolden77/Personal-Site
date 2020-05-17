@@ -60,14 +60,10 @@ const ContactPage = ({ path }) => {
         </div>
       ) : (
         <>
-          {/* <div className="mobile-page-title"></div> */}
           <div
             id="contact-header"
           >
-            <h1 style={{ margin: '0 !important'}}>
-              {/* <img id="astronaut-icon" src={Astronaut} /> */}
-              <br />
-              {/* <div style={{ fontSize: '100px', height: '106px' }}>👨🏻‍🚀</div> */}
+            <h1>
               Make contact!
             </h1>
           </div>
