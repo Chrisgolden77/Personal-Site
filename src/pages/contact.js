@@ -61,12 +61,27 @@ const ContactPage = ({ path }) => {
       ) : (
         <>
           {/* <div className="mobile-page-title"></div> */}
-          <h1 style={{ margin: '10px auto 0px' }}>
-            <img id="astronaut-icon" src={Astronaut} />
-            <br />
-            {/* <div style={{ fontSize: '100px', height: '106px' }}>👨🏻‍🚀</div> */}
-            Make contact!
-          </h1>
+          <div
+
+            style={{
+              height: '120px',
+              margin: '70px auto 10px',
+              textAlign: 'bottom',
+              backgroundImage: `url(${Astronaut})`,
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              display: 'flex',
+              flexDirection: 'column-reverse'
+            }}
+          >
+            <h1 style={{ margin: 0, height: '100%'}}>
+              {/* <img id="astronaut-icon" src={Astronaut} /> */}
+              <br />
+              {/* <div style={{ fontSize: '100px', height: '106px' }}>👨🏻‍🚀</div> */}
+              Make contact!
+            </h1>
+          </div>
           {errorMessage ? (
             <h4 className="contact-error">
               There was an issue sending this message💀!
