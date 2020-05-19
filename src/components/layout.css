@@ -15,6 +15,7 @@ html,
 body,
 #___gatsby {
   height: 100%;
+  width: 100%
 }
 #gatsby-focus-wrapper {
   height: 100%;
@@ -79,6 +80,8 @@ body {
   #home-hero-wrapper {
     /* background-color: rgba(0, 0, 0, 0.14) !important; */
     min-height: calc(100% + 1px) !important;
+    width: 100% !important;
+    max-width: 95vw !important;
   }
   hr {
     border-color: white !important;
@@ -98,9 +101,9 @@ body {
     height: 120px !important;
   }
   #layout {
-    background-size: 1400px !important;
-    background-position: bottom right !important;
-    grid-template-rows: 0 auto 50px !important;
+    background-size: 1500px !important ;
+    background-position: bottom center !important;
+    grid-template-rows: 0 calc(100% - 50px) 50px !important;
   }
   .mobile-home-link {
     display: flex;
@@ -161,6 +164,7 @@ body {
   }
   #timeline {
     margin-bottom: 0 !important;
+    max-width: 95vw !important
   }
 }
 
@@ -280,16 +284,18 @@ body {
   background: rgb(36, 60, 87);
   color: white;
   display: grid;
-  grid-template-rows: 100px auto 50px;
+  grid-template-rows: 100px calc(100% - 150px) 50px;
   grid-template-areas:
     'header'
     'main'
     'footer';
   /* flex-direction: column; */
   height: 100%;
+  width: 100%;
   background-image: url('../images/Orange-Desert-cropped.png') !important;
   background-size: cover;
   background-position: bottom center;
+  /* overflow-y: auto; */
 }
 #main-header {
   grid-area: header;
