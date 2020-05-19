@@ -46,7 +46,7 @@ const ContactPage = ({ path }) => {
   };
 
   return (
-    <Layout path={path}>
+    <Layout path={path} style={{overflow:'auto'}}>
       <SEO title="Contact Me" />
       {isMessageSent ? (
         <div className="contact-success">
