@@ -82,6 +82,7 @@ const ContactPage = ({ path }) => {
               handleSubmit(e.target);
               e.preventDefault();
             }}
+            style={{maxWidth: '90vw'}}
           >
             <input type="hidden" name="form-name" value="contact" />
             <input
