@@ -102,7 +102,7 @@ body {
   }
   #layout {
     background-size: 1500px !important ;
-    background-position: bottom center !important;
+    background-position: center !important;
     grid-template-rows: 0 calc(100% - 50px) 50px !important;
   }
   .mobile-home-link {
