@@ -82,7 +82,7 @@ const ContactPage = ({ path }) => {
               handleSubmit(e.target);
               e.preventDefault();
             }}
-            style={{maxWidth: '90vw'}}
+            style={{maxWidth: '90vw', overflowY: 'auto'}}
           >
             <input type="hidden" name="form-name" value="contact" />
             <input
