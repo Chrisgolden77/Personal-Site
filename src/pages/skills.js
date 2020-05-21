@@ -8,9 +8,9 @@ const SkillsPage = ({ path }) => (
     <SEO title="Skills" />
     <div id="skills-list-wrapper">
       <div id="skills-header">
-        <h1>What's in my tool belt</h1>
+        <h1>Skills I've learned</h1>
       </div>
-      <div style={{ width: '225px' }}>
+      <div style={{ width: '225px'}}>
         <h1>Core:</h1>
         <ul>
           <li>Javascript</li>

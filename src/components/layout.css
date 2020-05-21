@@ -484,7 +484,7 @@ button:hover {
   height: 120px;
   margin: 10px auto;
   text-align: bottom;
-  background-image: url('../images/kit.png');
+  background-image: url('../images/book.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -502,4 +502,5 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  font-weight: bold;
 }
