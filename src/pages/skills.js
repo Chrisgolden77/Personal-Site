@@ -6,17 +6,7 @@ import SEO from '../components/seo';
 const SkillsPage = ({ path }) => (
   <Layout path={path}>
     <SEO title="Skills" />
-    <div
-      id="skills-list-wrapper"
-      style={{
-        margin: 'auto',
-        width: '100vw',
-        height: 'calc(100% - 60px)',
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
-      }}
-    >
+    <div id="skills-list-wrapper">
       <div id="skills-header">
         <h1>What's in my tool belt</h1>
       </div>

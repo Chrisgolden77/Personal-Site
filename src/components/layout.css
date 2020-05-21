@@ -495,3 +495,11 @@ button:hover {
 #skills-header h1 {
   margin: 0px;
 }
+#skills-list-wrapper {
+  margin: auto;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
