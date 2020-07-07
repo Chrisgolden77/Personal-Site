@@ -349,16 +349,19 @@ body {
   margin: auto;
   font-family: fantasy;
 }
+#home-hero-image-wrapper h2, h1 {
+  margin-top: 0px !important;
+}
 /* #alternate-main {
   background: black;
   height: 100%;
 } */
 #personal-picture {
-  height: 200px;
+  height: 230px;
   border: 2px solid white;
-  border-radius: 100px;
+  border-radius: 130px;
   margin: auto;
-  width: 200px;
+  width: 230px;
 }
 #timeline {
   height: 800px;
