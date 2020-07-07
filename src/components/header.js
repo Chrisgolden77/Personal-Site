@@ -16,10 +16,12 @@ const Header = ({ menuLinks, path, siteTitle }) => {
     menuLinks.map(link => {
       return (
         <div className="header-link-wrapper" id={link.link}>
-          <Link id={link.name} className={assignClass(link.link)} to={link.link}>
-            <strong>
-              {link.name}
-              </strong>
+          <Link
+            id={link.name}
+            className={assignClass(link.link)}
+            to={link.link}
+          >
+            <strong>{link.name}</strong>
           </Link>
         </div>
       );
@@ -29,7 +31,7 @@ const Header = ({ menuLinks, path, siteTitle }) => {
     <header id="header">
       <div id="home-link-wrapper">
         <Link className={assignClass('/')} to="/">
-          <img src={Logo} className="header-logo" />
+          <img alt="header logo" className="header-logo" src={Logo}/>
         </Link>
       </div>
 

@@ -23,10 +23,10 @@ const MobileHeader = ({ menuLinks, path }) => {
     <header id="mobile-header">
       <h1 className="mobile-home-link">
         <img
-          src={Logo}
           alt="Chris Logo"
           className="header-logo"
           onClick={() => setMobileMenuState(!isMobileMenuOpen)}
+          src={Logo}
         />
       </h1>
       {isMobileMenuOpen ? (

@@ -504,3 +504,6 @@ button:hover {
   justify-content: space-evenly;
   font-weight: bold;
 }
+li {
+  margin: 10px;
+}

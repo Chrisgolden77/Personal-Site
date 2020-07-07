@@ -10,11 +10,7 @@ const IndexPage = ({ path }) => (
     {/* <div className="mobile-page-title"></div> */}
     <div id="home-hero-wrapper">
       <div id="home-hero">
-        <img
-          alt="Photo of Chris"
-          id="personal-picture"
-          src={ChrisImage}
-        />
+        <img alt="Photo of Chris" id="personal-picture" src={ChrisImage} />
         <div id="home-hero-paragraph">
           <h1>
             I'm
@@ -39,7 +35,12 @@ const IndexPage = ({ path }) => (
         <strong>
           <em>keep scrolling</em>
         </strong>
-        <img src={Arrow} width=" 50px" height="50px" />
+        <img
+          alt="down arrow to indicate keep scrolling"
+          height="50px"
+          src={Arrow}
+          width=" 50px"
+        />
       </div>
     </div>
 

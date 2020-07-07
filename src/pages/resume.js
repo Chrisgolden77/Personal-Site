@@ -19,18 +19,21 @@ const ResumePage = ({ path }) => {
         title="resume"
       />
       <div id="mobile-resume-viewer">
-        <div
-        id="mobile-resume-header"
-        >
+        <div id="mobile-resume-header">
           <strong>Download Resume: </strong>
           <a href={Resume} download style={{ height: '40px' }}>
             <img
+              alt="download resume"
               src={DownloadIcon}
               style={{ width: '50px', margin: 'auto 10px' }}
             />
           </a>
         </div>
-        <img id="mobile-resume-image" src={ResumeMobile} />
+        <img
+          alt="Chris Golden resume"
+          id="mobile-resume-image"
+          src={ResumeMobile}
+        />
       </div>
     </Layout>
   );
