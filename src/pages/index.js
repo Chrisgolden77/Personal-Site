@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 //internal imports
-import Arrow from '../images/arrows.png';
+// import Arrow from '../images/arrows.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 // import ChrisImage from '../images/ChrisProfileImage.jpeg';
@@ -12,27 +12,28 @@ const IndexPage = ({ path }) => (
     {/* <div className="mobile-page-title"></div> */}
     <div id="home-hero-wrapper">
       <div id="home-hero">
-        <img
-          alt="Chris head shot"
-          id="personal-picture"
-          src="https://media-exp1.licdn.com/dms/image/C5603AQHsMjURLrwZfg/profile-displayphoto-shrink_200_200/0?e=1599696000&v=beta&t=plzXRdieliCXBibWkrSXYLl_ZJ0YUcitFja14TVI_iw"
-        />
-        <div id="home-hero-paragraph">
+        <div id="home-hero-image-wrapper">
+          <img
+            alt="Chris head shot"
+            id="personal-picture"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQHsMjURLrwZfg/profile-displayphoto-shrink_200_200/0?e=1599696000&v=beta&t=plzXRdieliCXBibWkrSXYLl_ZJ0YUcitFja14TVI_iw"
+          />
           <h1>
-            I'm
-            <em> Chris Golden </em>
-            <br />
-            Welcome to my personal site!
+            <em>
+              <h2>Chris Golden</h2>
+            </em>
           </h1>
-          <h3>
+        </div>
+        <div id="home-hero-paragraph" style={{ textAlign: 'left' }}>
+          <h1>
+            Welcome to my personal site! <br />
+            <br />
             I'm a full stack developer with a passion for learning, problem
-            solving, and collaborating. I got into Software Development because
-            I want to make tools to help people.
+            solving, and collaborating.
             <br />
-            <br />
-            Take a look around, drop me a line, or take a peek at my code with
-            the github link below.
-          </h3>
+            <br /> I got into Software Development because I want to make tools
+            to help people.
+          </h1>
           <br />
         </div>
       </div>

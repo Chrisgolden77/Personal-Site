@@ -91,9 +91,13 @@ body {
     justify-content: space-evenly !important;
   }
   #home-hero-paragraph {
-    font-size: 1em;
+    font-size: .75em;
     max-width: 95% !important;
     margin: 0 auto !important;
+    text-align: center !important;
+  }
+  #home-hero-image-wrapper h2 {
+    font-size: 1em !important;
   }
   #personal-picture {
     margin: 9vh auto 0 !important;
@@ -321,10 +325,11 @@ body {
   width: 100%;
   margin: auto;
   max-width: 1200px;
-  min-height: 100%;
-  height: fit-content;
-  min-height: calc(100% + 2px) !important;
+  min-height: 80%;
+  /* height: fit-content; */
+  /* min-height: calc(100% + 2px) !important; */
   justify-content: space-around;
+  place-items: center;
 }
 #home-hero {
   display: flex;
@@ -339,6 +344,9 @@ body {
   max-width: 95% !important;
   margin: 50px auto;
   width: 470px;
+}
+#home-hero-image-wrapper {
+  margin: auto;
 }
 /* #alternate-main {
   background: black;
