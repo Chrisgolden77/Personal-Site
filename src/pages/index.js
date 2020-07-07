@@ -36,7 +36,7 @@ const IndexPage = ({ path }) => (
           <br />
         </div>
       </div>
-      <div style={{ height: 'fit-content', width: '130px' }}>
+      {/* <div style={{ height: 'fit-content', width: '130px' }}>
         <hr style={{ border: '1px solid white' }}></hr>
         <strong>
           <em>keep scrolling</em>
@@ -47,10 +47,10 @@ const IndexPage = ({ path }) => (
           src={Arrow}
           width=" 50px"
         />
-      </div>
+      </div> */}
     </div>
 
-    <div id="home-content">
+    {/* <div id="home-content">
       <div id="timeline">
         {' '}
         <br />
@@ -71,7 +71,7 @@ const IndexPage = ({ path }) => (
         fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
         fdla;jfkl;dsajklfdsjkl;faHandPointDown
       </div>
-    </div>
+    </div> */}
   </Layout>
 );
 
