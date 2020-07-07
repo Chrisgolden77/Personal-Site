@@ -31,7 +31,8 @@ const IndexPage = ({ path }) => (
             I'm a full stack developer with a passion for learning, problem
             solving, and collaborating.
             <br />
-            <br /> I got into Software Development because I want to make tools
+            <br />
+            I got in to Software Development because I want to make tools
             to help people.
           </h1>
           <br />
