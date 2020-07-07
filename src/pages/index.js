@@ -4,7 +4,7 @@ import React, { Fragment } from 'react';
 // import Arrow from '../images/arrows.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-// import ChrisImage from '../images/ChrisProfileImage.jpeg';
+import ChrisImage from '../images/ChrisProfileImage.jpeg';
 
 const IndexPage = ({ path }) => (
   <Layout className="home" path={path}>
@@ -16,7 +16,7 @@ const IndexPage = ({ path }) => (
           <img
             alt="Chris head shot"
             id="personal-picture"
-            src="https://media-exp1.licdn.com/dms/image/C5603AQHsMjURLrwZfg/profile-displayphoto-shrink_200_200/0?e=1599696000&v=beta&t=plzXRdieliCXBibWkrSXYLl_ZJ0YUcitFja14TVI_iw"
+            src={ChrisImage}
           />
           <h1>
             <em>
