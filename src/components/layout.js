@@ -61,6 +61,7 @@ const Layout = ({ children, className, additionalStyles, path }) => {
             className="footer-link"
             href="https://www.linkedin.com/in/christopher-golden/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
@@ -70,6 +71,7 @@ const Layout = ({ children, className, additionalStyles, path }) => {
             className="footer-link"
             href="https://github.com/Chrisgolden77/Personal-Site"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>

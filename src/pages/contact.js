@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react';
+import React, { useState } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -49,7 +49,7 @@ const ContactPage = ({ path }) => {
       <SEO title="Contact Me" />
       {isMessageSent ? (
         <div className="contact-success">
-          <img id="ship-icon" src={Ship} />
+          <img alt="starship blasting off" id="ship-icon" src={Ship} />
           <h1>Your message is on it's way!</h1>
           <h3>
             Thanks for reaching out! <br />
@@ -68,7 +68,7 @@ const ContactPage = ({ path }) => {
           </div>
           {errorMessage ? (
             <h4 className="contact-error">
-              There was an issue sending this message💀!
+              There was an issue sending this message<span aria-label="skull" role="img">💀</span>!
             </h4>
           ) : null}
           <form

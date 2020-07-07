@@ -26,6 +26,7 @@ const MobileHeader = ({ menuLinks, path }) => {
           alt="Chris Logo"
           className="header-logo"
           onClick={() => setMobileMenuState(!isMobileMenuOpen)}
+          onKeyDown={() => setMobileMenuState(!isMobileMenuOpen)}
           src={Logo}
         />
       </h1>

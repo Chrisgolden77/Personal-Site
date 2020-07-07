@@ -7,7 +7,6 @@ import ResumeMobile from '../images/Chris_Golden_Resume.png';
 import SEO from '../components/seo';
 
 const ResumePage = ({ path }) => {
-  const downloadPDF = () => {};
   return (
     <Layout path={path}>
       <SEO title="Resume " />
