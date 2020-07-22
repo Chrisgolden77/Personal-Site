@@ -8,7 +8,7 @@ exports.onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
       <script
         type="text/javascript"
-        src="https://dev-app.swarmreport.org/widget.js"
+        src="https://app-dev.swarmreport.org/widget.js"
         name="bee-widget"
         companyuid="1001"
       ></script>
