@@ -4,7 +4,7 @@ import React, { Fragment } from 'react';
 // import Arrow from '../images/arrows.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import ChrisImage from '../images/ChrisProfileImage.jpeg';
+// import ChrisImage from '../images/ChrisProfileImage.jpeg';
 
 const IndexPage = ({ path }) => (
   <Layout className="home" path={path}>
@@ -16,7 +16,7 @@ const IndexPage = ({ path }) => (
           <img
             alt="Chris head shot"
             id="personal-picture"
-            src={ChrisImage}
+            src='https://media-exp1.licdn.com/dms/image/C5603AQE84KPRDgmfWA/profile-displayphoto-shrink_400_400/0?e=1603324800&v=beta&t=lITDfoHHbvPPZT0nVws5DJgpaTl7M8sPHppnBRWIFqc'
           />
           <h1>
             <em>
@@ -32,8 +32,8 @@ const IndexPage = ({ path }) => (
             solving, and collaborating.
             <br />
             <br />
-            I got in to Software Development because I want to make tools
-            to help people.
+            I got in to Software Development because I want to create tools
+            to help people make a difference.
           </h1>
           <br />
         </div>
