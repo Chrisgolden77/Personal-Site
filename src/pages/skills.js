@@ -1,13 +1,15 @@
 import React from 'react';
 
+import Cards from '../components/cards';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-
+import Languages from '../assets/languages.json';
 const SkillsPage = ({ path }) => (
   <Layout path={path}>
     <SEO title="Skills" />
-    <div id="skills-list-wrapper">
-      <div id="skills-header">
+    <div>
+      <Cards items={Languages}/>
+      {/* <div id="skills-header">
         <h1>My skills</h1>
       </div>
       <div style={{ width: '225px'}}>
@@ -45,7 +47,7 @@ const SkillsPage = ({ path }) => (
           <li>Netlify</li>
           <li>Git</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   </Layout>
 );
