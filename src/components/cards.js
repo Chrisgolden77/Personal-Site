@@ -2,33 +2,35 @@ import React from 'react';
 
 const Cards = ({ items }) => {
   return (
-    <section class="card-list">
+    <section className="card-list">
       {items &&
         items.map(
           (
             { content, language, description, languageIcon, tags, title },
             i
           ) => (
-            <article class="card" key={i}>
-              <div class="card-language">
-                <div class="language-avatar" href="#">
+            <article className="card" key={i}>
+              <div className="card-language">
+                <div className="language-avatar" href="#">
                   <img alt={language} src={languageIcon} />
                 </div>
                 {description && (
-                  <div class="language-name">
+                  <div className="language-name">
                     {language}
-                    <div class="language-name-suffix">{description}</div>
+                    <div className="language-name-suffix">{description}</div>
                   </div>
                 )}
               </div>
-              <header class="card-header">
+              <header className="card-header">
                 <h2>{language}</h2>
                 <p>{content}</p>
               </header>
               {tags && (
-                <div class="tags">
-                  {tags.map(tag => (
-                    <a href={tag.link}>{tag.text}</a>
+                <div className="tags">
+                  {tags.map((tag, i) => (
+                    <a key={(tag.text + i)} href={tag.link}>
+                      {tag.text}
+                    </a>
                   ))}
                 </div>
               )}

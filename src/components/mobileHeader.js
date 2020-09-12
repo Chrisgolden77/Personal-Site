@@ -11,9 +11,9 @@ const MobileHeader = ({ menuLinks, path }) => {
     return path === link ? 'header-link active-link' : 'header-link';
   };
   const renderMenuLinks = () =>
-    menuLinks.map(link => {
+    menuLinks.map((link, i) => {
       return (
-        <Link key={link.link} className={assignClass(link.link)} to={link.link}>
+        <Link key={i} className={assignClass(link.link)} to={link.link}>
           <strong>{link.name}</strong>
         </Link>
       );
@@ -31,9 +31,7 @@ const MobileHeader = ({ menuLinks, path }) => {
         />
       </h1>
       {isMobileMenuOpen ? (
-        <div id="header-links">
-          {renderMenuLinks()}
-        </div>
+        <div id="header-links">{renderMenuLinks()}</div>
       ) : null}
     </header>
   );
