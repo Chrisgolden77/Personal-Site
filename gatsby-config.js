@@ -21,7 +21,7 @@ module.exports = {
     ],
     description: `Chris Golden's personal website`,
     author: `Chris Golden`,
-    url: 'http://www.goldenchris.com'
+    url: 'http://www.goldenchris.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

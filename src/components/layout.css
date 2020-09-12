@@ -122,7 +122,7 @@ body {
     grid-area: mobile-resume-head;
   }
   #mobile-resume-viewer {
-    background-color: rgb(36, 60, 87);
+    background-color: rgba(36, 60, 87, 0.846);
     display: grid !important;
     grid-template-rows: 100px auto;
     grid-template-areas:
@@ -315,9 +315,9 @@ body {
   height: fit-content;
   width: 100%;
   text-align: center;
-  background: rgb(36, 60, 87);
+  background: rgba(36, 60, 87, 0.842);
   margin: auto;
-  /* padding: 200px 10px; */
+  padding: 10px 0;
 }
 #home-hero-wrapper {
   display: flex;
@@ -353,22 +353,12 @@ body {
 h1 {
   margin-top: 0px !important;
 }
-/* #alternate-main {
-  background: black;
-  height: 100%;
-} */
 #personal-picture {
   height: 230px;
   border: 2px solid white;
   border-radius: 130px;
   margin: auto;
   width: 230px;
-}
-#timeline {
-  height: 800px;
-  max-width: 500px;
-  margin: auto;
-  /* margin-bottom: 50px; */
 }
 /* **************RESUME**************** */
 
@@ -385,15 +375,10 @@ h1 {
 
 /* ******** FOOTER ******* */
 footer {
-  /* bottom: 0; */
   color: white;
   display: flex;
   justify-content: center;
-  /* position: fixed; */
-  /* text-align: center; */
   width: 100vw;
-  /* height: 50px; */
-  /* margin-bottom: 0px !important; */
 }
 footer h2 {
   height: 100%;
@@ -494,7 +479,7 @@ button:hover {
 }
 /* ************SKILLS************ */
 #skills-header {
-  height: 120px;
+  height: 70px;
   margin: 10px auto;
   text-align: bottom;
   background-image: url('../images/book.png');
@@ -505,7 +490,7 @@ button:hover {
   flex-direction: column-reverse !important;
   width: 100vw !important;
 }
-#skills-header h1 {
+#skills-header h2 {
   margin: 0px;
 }
 #skills-list-wrapper {

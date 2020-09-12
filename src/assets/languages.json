@@ -26,25 +26,25 @@
   {
     "content": "SQL is a domain-specific language designed for managing data held in a relational databases",
     "language": "SQL (MySQL and MSSQL)",
-    "languageIcon": "https://www.logolynx.com/images/logolynx/54/54b5145b027a1ff11962bdf475c3fd43.png",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/MySQL_Logo.png/104px-MySQL_Logo.png",
     "tags": [{"link": "#", "text": "Used since 2018"}] 
   },
   {
-    "content": "CSS is a language used for describing the presentation of a document written in a markup language like HTML",
-    "language": "CSS",
-    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png",
-    "tags": [{"link": "#", "text": "Used since 2018"}] 
-  },
-  {
-    "content": "CSS is a language used for describing the presentation of a document written in a markup language like HTML",
-    "language": "CSS",
-    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png",
-    "tags": [{"link": "#", "text": "Used since 2018"}] 
+    "content": "jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+    "language": "JQuery",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/220px-JQuery_logo.svg.png",
+    "tags": [{"link": "#", "text": "Used since 2019"}] 
   },
   {
     "content": "HTML is the standard markup language for documents designed to be displayed in a web browser",
     "language": "HTML",
     "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png",
+    "tags": [{"link": "#", "text": "Used since 2018"}] 
+  },
+  {
+    "content": "CSS is a language used for describing the presentation of a document written in a markup language like HTML",
+    "language": "CSS",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png",
     "tags": [{"link": "#", "text": "Used since 2018"}] 
   }
 ]

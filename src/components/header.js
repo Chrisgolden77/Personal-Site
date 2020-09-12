@@ -5,8 +5,10 @@ import React from 'react';
 import Logo from '../images/chris-logo.png';
 
 const Header = ({ menuLinks, path, siteTitle }) => {
-  const assignClass = link => {
-    if (link === '/') {
+  const assignClass = (link, nonLogo) => {
+    if (link === '/' && nonLogo) {
+      return path === link ? 'header-link active-link' : 'header-link';
+    } else if (link === '/') {
       return path === link ? 'home-link active-home-link' : 'home-link';
     } else {
       return path === link ? 'header-link active-link' : 'header-link';
@@ -31,11 +33,18 @@ const Header = ({ menuLinks, path, siteTitle }) => {
     <header id="header">
       <div id="home-link-wrapper">
         <Link className={assignClass('/')} to="/">
-          <img alt="header logo" className="header-logo" src={Logo}/>
+          <img alt="header logo" className="header-logo" src={Logo} />
         </Link>
       </div>
 
-      <div id="header-links">{renderMenuLinks()}</div>
+      <div id="header-links">
+        <div className="header-link-wrapper">
+          <Link className={`${assignClass('/', true)}`} to="/">
+            <strong>Home</strong>
+          </Link>
+        </div>
+        {renderMenuLinks()}
+      </div>
     </header>
   );
 };
