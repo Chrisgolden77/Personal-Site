@@ -10,10 +10,14 @@ module.exports = {
       //   name: 'My Apps',
       //   link: '/apps/',
       // },
-      {
-        name: 'Resume',
-        link: '/resume/',
-      },
+        {
+          name: 'Home',
+          link: '/',
+        },
+        {
+          name: 'Resume',
+          link: '/resume/',
+        },
       {
         name: 'Contact',
         link: '/contact/',

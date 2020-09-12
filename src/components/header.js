@@ -37,11 +37,6 @@ const Header = ({ menuLinks, path, siteTitle }) => {
       </div>
 
       <div id="header-links">
-        <div className="header-link-wrapper">
-          <Link className={`${classNamesReady ? assignClass('/', false) : 'header-link active-link'}`} to="/">
-            <strong>Home</strong>
-          </Link>
-        </div>
         {classNamesReady && renderMenuLinks()}
       </div>
     </header>
