@@ -6,11 +6,10 @@ import Logo from '../images/chris-logo.png';
 
 const Header = ({ menuLinks, path, siteTitle }) => {
   const assignClass = (link, isLogo) => {
-    if (link === '/' && isLogo) {
-      return path === link ? 'home-link active-home-link' : 'home-link';
-    } else {
-      return path === link ? 'header-link active-link' : 'header-link';
-    }
+    let className = isLogo ? 'home-link' : 'header-link';
+    if (path === link && !isLogo) className += ' active-link';
+    if (path === link && isLogo) className += ' active-home-link';
+    return className;
   };
   const renderMenuLinks = () =>
     menuLinks.map(link => {
@@ -30,7 +29,10 @@ const Header = ({ menuLinks, path, siteTitle }) => {
   return (
     <header id="header">
       <div id="home-link-wrapper">
-        <Link className={assignClass('/', true)} to="/">
+        <Link
+          className={assignClass('/', true) || 'home-link active-home-link'}
+          to="/"
+        >
           <img alt="header logo" className="header-logo" src={Logo} />
         </Link>
       </div>
