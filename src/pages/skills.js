@@ -8,10 +8,11 @@ const SkillsPage = ({ path }) => (
   <Layout path={path}>
     <SEO title="Skills" />
     <div>
-      <Cards items={Languages}/>
-      {/* <div id="skills-header">
-        <h1>My skills</h1>
+      <div id="skills-header">
+        <h1>My Tech Stack</h1>
       </div>
+      <Cards items={Languages} />
+      {/* 
       <div style={{ width: '225px'}}>
         <h1>Core:</h1>
         <ul>

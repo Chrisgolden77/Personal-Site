@@ -327,7 +327,7 @@ body {
   max-width: 1200px;
   min-height: 80%;
   /* height: fit-content; */
-  /* min-height: calc(100% + 2px) !important; */
+  min-height: calc(100% + 2px) !important;
   justify-content: space-around;
   place-items: center;
 }
@@ -530,23 +530,23 @@ li {
   overflow-x: scroll;
 }
 .card-list::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 10px !important;
+  height: 10px !important;
 }
 .card-list::-webkit-scrollbar-thumb {
-  background: #201c29;
-  border-radius: 10px;
+  background: #201c29 !important;
+  border-radius: 10px !important;
   box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25) !important;
 }
 .card-list::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d) !important;
 }
 .card {
   display: flex;
   position: relative;
   flex-direction: column;
-  height: 350px;
+  height: 400px;
   width: 350px;
   min-width: 250px;
   padding: 1.5rem;
@@ -562,6 +562,7 @@ li {
 }
 .card:hover ~ .card {
   transform: translateX(130px);
+  
 }
 .card:not(:first-child) {
   margin-left: -130px;
@@ -569,11 +570,11 @@ li {
 .card-language {
   display: grid;
   position: relative;
-  grid-template-columns: 75px 1fr;
+  grid-template-columns: 100px 1fr;
   align-content: center;
-  margin: auto;
+  margin: 20px auto;
 }
-.card-header h2:hover {
+.card-header:hover {
   background: linear-gradient(90deg, #ff8a00, #e52e71);
   text-shadow: none;
   -webkit-text-fill-color: transparent;
@@ -585,26 +586,17 @@ li {
   align-self: start;
   position: relative;
   box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
 }
 .language-avatar img {
   display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 100px;
+  height: auto;
+  max-height: 120px;
+  /* border-radius: 50%; */
   overflow: hidden;
-  margin: 16px 10px;
-}
-.half-circle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 48px;
-  fill: none;
-  stroke: #ff8a00;
-  stroke-width: 8;
-  stroke-linecap: round;
-  pointer-events: none;
+  margin: auto;
 }
 .language-name {
   margin-left: 10px;

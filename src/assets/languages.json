@@ -1,9 +1,50 @@
 [
   {
+    "content": "React.js is an open-source JavaScript library[3] for building user interfaces or UI components.",
+    "language": "React.js",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png",
+    "tags": [{"link": "#", "text": "Used since 2018"}] 
+  },
+  {
+    "content": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+    "language": "Node.js",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png",
+    "tags": [{"link": "#", "text": "Used since 2018"}] 
+  },
+  {
     "content": "JavaScript is a scripting language used to create and control dynamic website content",
     "language": "Javascript",
-    "languageDescription": "",
-    "languageIcon": "https://github.com/Chrisgolden77/Personal-Site/blob/master/src/images/Javascript.png",
-    "title": "Javascript"
+    "languageIcon": "https://www.logolynx.com/images/logolynx/54/54b5145b027a1ff11962bdf475c3fd43.png",
+    "tags": [{"link": "#", "text": "Used since 2018"}] 
+  },
+  {
+    "content": "TypeScript is a strict syntactical superset of JavaScript and adds optional static typing to the language",
+    "language": "TypeScript",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/64px-Typescript_logo_2020.svg.png",
+    "tags": [{"link": "#", "text": "Used since 2019"}] 
+  },
+  {
+    "content": "SQL is a domain-specific language designed for managing data held in a relational databases",
+    "language": "SQL (MySQL and MSSQL)",
+    "languageIcon": "https://www.logolynx.com/images/logolynx/54/54b5145b027a1ff11962bdf475c3fd43.png",
+    "tags": [{"link": "#", "text": "Used since 2018"}] 
+  },
+  {
+    "content": "CSS is a language used for describing the presentation of a document written in a markup language like HTML",
+    "language": "CSS",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png",
+    "tags": [{"link": "#", "text": "Used since 2018"}] 
+  },
+  {
+    "content": "CSS is a language used for describing the presentation of a document written in a markup language like HTML",
+    "language": "CSS",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png",
+    "tags": [{"link": "#", "text": "Used since 2018"}] 
+  },
+  {
+    "content": "HTML is the standard markup language for documents designed to be displayed in a web browser",
+    "language": "HTML",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png",
+    "tags": [{"link": "#", "text": "Used since 2018"}] 
   }
 ]

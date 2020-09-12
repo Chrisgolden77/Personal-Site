@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
 
 //internal imports
-// import Arrow from '../images/arrows.png';
+import Arrow from '../images/arrows.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Cards from '../components/cards'
 import ChrisImage from '../images/ChrisProfileImage.jpg';
+import languages from '../assets/languages.json'
 
 const IndexPage = ({ path }) => (
   <Layout className="home" path={path}>
@@ -38,7 +40,7 @@ const IndexPage = ({ path }) => (
           <br />
         </div>
       </div>
-      {/* <div style={{ height: 'fit-content', width: '130px' }}>
+      <div style={{ height: 'fit-content', width: '130px' }}>
         <hr style={{ border: '1px solid white' }}></hr>
         <strong>
           <em>keep scrolling</em>
@@ -49,31 +51,12 @@ const IndexPage = ({ path }) => (
           src={Arrow}
           width=" 50px"
         />
-      </div> */}
+      </div>
     </div>
 
-    {/* <div id="home-content">
-      <div id="timeline">
-        {' '}
-        <br />
-        fjkdsl;a dsajfkl;asj fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a
-        dsajfkl;asj fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown fjkdsl;a dsajfkl;asj
-        fdla;jfkl;dsajklfdsjkl;faHandPointDown
-      </div>
-    </div> */}
+    <div id="home-content">
+      <Cards items={languages}/>
+    </div>
   </Layout>
 );
 

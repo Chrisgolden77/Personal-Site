@@ -6,31 +6,32 @@ const Cards = ({ items }) => {
       {items &&
         items.map(
           (
-            { content, language, languageDescription, languageIcon, title },
+            { content, language, description, languageIcon, tags, title },
             i
           ) => (
             <article class="card" key={i}>
-              <header class="card-header">
-                <h2>{title}</h2>
-                <p>{content}</p>
-              </header>
               <div class="card-language">
                 <div class="language-avatar" href="#">
-                  <img alt={language} src={languageIcon}/>
+                  <img alt={language} src={languageIcon} />
                 </div>
-                <svg class="half-circle" viewbox="0 0 106 57">
-                  <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                </svg>
-                {/* <div class="language-name">
-                  {language}
-                  <div class="language-name-suffix">{languageDescription}</div>
-                </div> */}
+                {description && (
+                  <div class="language-name">
+                    {language}
+                    <div class="language-name-suffix">{description}</div>
+                  </div>
+                )}
               </div>
-              {/* <div class="tags">
-                <a href="#">html</a>
-                <a href="#">css</a>
-                <a href="#">web-dev</a>
-              </div> */}
+              <header class="card-header">
+                <h2>{language}</h2>
+                <p>{content}</p>
+              </header>
+              {tags && (
+                <div class="tags">
+                  {tags.map(tag => (
+                    <a href={tag.link}>{tag.text}</a>
+                  ))}
+                </div>
+              )}
             </article>
           )
         )}
