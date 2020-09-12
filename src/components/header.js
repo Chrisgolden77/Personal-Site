@@ -42,7 +42,7 @@ const Header = ({ menuLinks, path, siteTitle }) => {
             <strong>Home</strong>
           </Link>
         </div>
-        {renderMenuLinks()}
+        {classNamesReady && renderMenuLinks()}
       </div>
     </header>
   );
