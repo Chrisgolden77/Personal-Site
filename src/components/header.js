@@ -6,9 +6,7 @@ import Logo from '../images/chris-logo.png';
 
 const Header = ({ menuLinks, path, siteTitle }) => {
   const assignClass = (link, nonLogo) => {
-    if (link === '/' && nonLogo) {
-      return path === link ? 'header-link active-link' : 'header-link';
-    } else if (link === '/') {
+    if (link === '/' && !nonLogo) {
       return path === link ? 'home-link active-home-link' : 'home-link';
     } else {
       return path === link ? 'header-link active-link' : 'header-link';
