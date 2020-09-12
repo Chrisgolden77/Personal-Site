@@ -31,14 +31,14 @@ const Header = ({ menuLinks, path, siteTitle }) => {
   return (
     <header id="header">
       <div id="home-link-wrapper">
-        <Link className={assignClass('/', true)} to="/">
+        <Link className={classNamesReady ? assignClass('/', true) : 'home-link active-home-link'} to="/">
           <img alt="header logo" className="header-logo" src={Logo} />
         </Link>
       </div>
 
       <div id="header-links">
         <div className="header-link-wrapper">
-          <Link className={`${assignClass('/', false)}`} to="/">
+          <Link className={`${classNamesReady ? assignClass('/', false) : 'header-link active-link'}`} to="/">
             <strong>Home</strong>
           </Link>
         </div>
