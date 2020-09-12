@@ -5,8 +5,8 @@ import React from 'react';
 import Logo from '../images/chris-logo.png';
 
 const Header = ({ menuLinks, path, siteTitle }) => {
-  const assignClass = (link, nonLogo) => {
-    if (link === '/' && !nonLogo) {
+  const assignClass = (link, isLogo) => {
+    if (link === '/' && isLogo) {
       return path === link ? 'home-link active-home-link' : 'home-link';
     } else {
       return path === link ? 'header-link active-link' : 'header-link';
@@ -18,7 +18,7 @@ const Header = ({ menuLinks, path, siteTitle }) => {
         <div className="header-link-wrapper" id={link.link}>
           <Link
             id={link.name}
-            className={assignClass(link.link)}
+            className={assignClass(link.link, false)}
             to={link.link}
           >
             <strong>{link.name}</strong>
@@ -30,14 +30,14 @@ const Header = ({ menuLinks, path, siteTitle }) => {
   return (
     <header id="header">
       <div id="home-link-wrapper">
-        <Link className={assignClass('/')} to="/">
+        <Link className={assignClass('/', true)} to="/">
           <img alt="header logo" className="header-logo" src={Logo} />
         </Link>
       </div>
 
       <div id="header-links">
         <div className="header-link-wrapper">
-          <Link className={`${assignClass('/', true)}`} to="/">
+          <Link className={`${assignClass('/', false)}`} to="/">
             <strong>Home</strong>
           </Link>
         </div>
