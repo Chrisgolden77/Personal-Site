@@ -32,9 +32,6 @@ const MobileHeader = ({ menuLinks, path }) => {
       </h1>
       {isMobileMenuOpen ? (
         <div id="header-links">
-          <Link className={assignClass('/')} to="/">
-            <strong>Home</strong>
-          </Link>
           {renderMenuLinks()}
         </div>
       ) : null}
