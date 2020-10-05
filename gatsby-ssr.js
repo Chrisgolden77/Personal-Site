@@ -11,6 +11,7 @@ exports.onRenderBody = ({ setHeadComponents }) => {
         src="https://app-dev.swarmreport.org/widget.js"
         id="bee-widget"
         data-company-uid="00000000-0000-0000-0000-000000000000"
+        data-dev-environment="-dev"
       ></script>
   ]);
 };
