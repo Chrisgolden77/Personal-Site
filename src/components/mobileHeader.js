@@ -21,15 +21,13 @@ const MobileHeader = ({ menuLinks, path }) => {
 
   return (
     <header id="mobile-header">
-      <h1 className="mobile-home-link">
-        <img
-          alt="Chris Logo"
-          className="header-logo"
-          onClick={() => setMobileMenuState(!isMobileMenuOpen)}
-          onKeyDown={() => setMobileMenuState(!isMobileMenuOpen)}
-          src={Logo}
-        />
-      </h1>
+      <button
+        className="mobile-home-button"
+        onClick={() => setMobileMenuState(!isMobileMenuOpen)}
+        onKeyDown={() => setMobileMenuState(!isMobileMenuOpen)}
+      >
+        <img alt="Chris Logo" className="header-logo" src={Logo} />
+      </button>
       {isMobileMenuOpen ? (
         <div id="header-links">{renderMenuLinks()}</div>
       ) : null}

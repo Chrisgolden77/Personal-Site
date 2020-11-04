@@ -45,7 +45,7 @@ const ContactPage = ({ path }) => {
   };
 
   return (
-    <Layout path={path} style={{overflow:'auto'}}>
+    <Layout path={path} style={{ overflow: 'auto' }}>
       <SEO title="Contact Me" />
       {isMessageSent ? (
         <div className="contact-success">
@@ -59,16 +59,16 @@ const ContactPage = ({ path }) => {
         </div>
       ) : (
         <>
-          <div
-            id="contact-header"
-          >
-            <h1>
-              Make contact!
-            </h1>
+          <div id="contact-header">
+            <h1>Make contact!</h1>
           </div>
           {errorMessage ? (
             <h4 className="contact-error">
-              There was an issue sending this message<span aria-label="skull" role="img">💀</span>!
+              There was an issue sending this message
+              <span aria-label="skull" role="img">
+                💀
+              </span>
+              !
             </h4>
           ) : null}
           <form
@@ -81,7 +81,7 @@ const ContactPage = ({ path }) => {
               handleSubmit(e.target);
               e.preventDefault();
             }}
-            style={{maxWidth: '90vw'}}
+            style={{ maxWidth: '90vw' }}
           >
             <input type="hidden" name="form-name" value="contact" />
             <input
@@ -108,7 +108,7 @@ const ContactPage = ({ path }) => {
               value={formData.message}
             ></textarea>
             <div id="contact-btn-wrapper">
-              <button className="button" type="submit">
+              <button className="contact-form-button" type="submit">
                 Send
               </button>
             </div>

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 //internal imports
 import Arrow from '../images/arrows.png';
