@@ -1,6 +1,6 @@
 const Apps = [
   {
-    appImages: [require('../images/swarm-report-widget.png')],
+    appImages: [''],
     appName: 'Swarm Report Client',
     appDescription:
     'A member/report management tool for clients of GoldenK Swarm Report service.\n \nBuilt with React.js, Node, Mysql, and Typescript. \n\nClick the bee icon on this page for a demo!',
@@ -16,12 +16,12 @@ const Apps = [
     appLinkText: 'More Info',
   },
   {
-    appImages: [require('../images/order-up.png')],
+    appImages: [require('../images/personal-site.png')],
     appName: 'GoldenChris.com',
     appDescription:
-      'My personal and porfolio site, built with React.js, Gatsby, and deployed on Netlify',
-    appLink: 'https://chrisgolden77.github.io/order-up/',
-    // appLinkText: 'View Demo Here'
+      'My personal and porfolio site, built with React.js, Gatsby, CSS, and deployed on Netlify',
+    appLink: 'https://github.com/chrisgolden77/personal-site',
+    appLinkText: 'View Repo Here'
   },
   {
     appImages: [require('../images/order-up.png')],
