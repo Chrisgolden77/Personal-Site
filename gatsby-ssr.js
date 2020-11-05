@@ -8,10 +8,10 @@ exports.onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
       <script
         type="text/javascript"
-        src="https://app-dev.swarmreport.org/widget.js"
+        src="https://app-qa.swarmreport.org/widget.js"
         id="bee-widget"
         data-company-uid="00000000-0000-0000-0000-000000000000"
-        data-environment="dev"
+        data-environment="qa"
       ></script>
   ]);
 };
