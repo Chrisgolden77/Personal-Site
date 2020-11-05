@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AppCard = ({ app }) => {
+const AppCard = ({ app, onClick }) => {
   return (
-    <div className="app-tile">
+    <div className="app-tile" onClick={() => onClick()}>
       <h2>{app.appName}</h2>
       <img
         className="app-image"

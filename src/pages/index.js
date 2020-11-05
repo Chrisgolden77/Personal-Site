@@ -1,12 +1,12 @@
 import React from 'react';
-
-//internal imports
-import Arrow from '../images/arrows.png';
+import languages from '../assets/languages.json';
+import Cards from '../components/cards';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Cards from '../components/cards';
+//internal imports
+import Arrow from '../images/arrows.png';
 import ChrisImage from '../images/ChrisProfileImage.jpg';
-import languages from '../assets/languages.json';
+
 
 const IndexPage = ({ path }) => (
   <Layout className="home" path={path}>

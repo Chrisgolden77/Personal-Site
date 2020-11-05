@@ -12,14 +12,14 @@ const Apps = [
     appName: 'Swarm Report Widget',
     appDescription:
     'A widget for reporting swarms to a bee community. Built with React.js, Node, and Typescript. \nClick the bee icon on this page for a demo!',
-    // appLink: 'http://swarmreport.org',
-    // appLinkText: 'http://swarmreport.org',
+    appLink: 'http://swarmreport.org',
+    appLinkText: 'More Info',
   },
   {
     appImages: [require('../images/order-up.png')],
-    appName: 'Order Up!',
+    appName: 'GoldenChris.com',
     appDescription:
-      'A simple application interface for order taking orders, built with React.js',
+      'My personal and porfolio site, built with React.js, Gatsby, and deployed on Netlify',
     appLink: 'https://chrisgolden77.github.io/order-up/',
     // appLinkText: 'View Demo Here'
   },

@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useState, useEffect } from 'react';
-
+import React, { useEffect, useState } from 'react';
 import Logo from '../images/chris-logo.png';
+
 
 const Header = ({ menuLinks, path, siteTitle }) => {
   const [classNamesReady, setClassNamesReady] = useState(false);

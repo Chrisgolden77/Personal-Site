@@ -2,22 +2,18 @@ module.exports = {
   siteMetadata: {
     title: `Chris Golden`,
     menuLinks: [
-      // {
-      //   name: 'Skills',
-      //   link: '/skills/',
-      // },
-      // {
-      //   name: 'My Apps',
-      //   link: '/apps/',
-      // },
-        {
-          name: 'Home',
-          link: '/',
-        },
-        {
-          name: 'Resume',
-          link: '/resume/',
-        },
+      {
+        name: 'Home',
+        link: '/',
+      },
+      {
+        name: 'Portfolio',
+        link: '/portfolio/',
+      },
+      {
+        name: 'Resume',
+        link: '/resume/',
+      },
       {
         name: 'Contact',
         link: '/contact/',

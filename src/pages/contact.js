@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Ship from '../images/transport.png';
+
 
 function encode(data) {
   return Object.keys(data)

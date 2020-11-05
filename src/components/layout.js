@@ -5,15 +5,15 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import React from 'react';
-import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { graphql, useStaticQuery } from 'gatsby';
-
+import PropTypes from 'prop-types';
+import React from 'react';
 import Header from './header';
-import MobileHeader from './mobileHeader';
 import './layout.css';
+import MobileHeader from './mobileHeader';
+
 
 const Layout = ({ children, className, additionalStyles, path }) => {
   const data = useStaticQuery(graphql`

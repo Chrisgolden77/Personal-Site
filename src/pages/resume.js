@@ -1,10 +1,10 @@
 import React from 'react';
-
-import DownloadIcon from '../images/multimedia.png';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 import Resume from '../images/Chris_Golden_Resume.pdf';
 import ResumeMobile from '../images/Chris_Golden_Resume.png';
-import SEO from '../components/seo';
+import DownloadIcon from '../images/multimedia.png';
+
 
 const ResumePage = ({ path }) => {
   return (
