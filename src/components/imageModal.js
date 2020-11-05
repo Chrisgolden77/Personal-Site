@@ -1,16 +1,16 @@
-import { chevronLeft, chevronRight } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { chevronLeft, chevronRight } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 
 const ImageModal = ({ images, handleClose }) => {
   const [currentImage, setCurrentImage] = useState('');
-  const [imageIndex, setImageIndex] = useState(0);
+  // const [imageIndex, setImageIndex] = useState(0);
   useEffect(() => {
     if (images.length) {
-      setCurrentImage(images[imageIndex]);
+      setCurrentImage(images[0]);
     }
-  });
-  useEffect(() => setCurrentImage(images[imageIndex]), imageIndex);
+  }, [images, images.length]);
+
   const modalStyle = {
     alignItems: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -34,26 +34,28 @@ const ImageModal = ({ images, handleClose }) => {
         X
       </button>
       <div>
-        <button
+        {/* <button
+          onClick={() => images.length > 1 && setImageIndex(imageIndex--)}
           style={{
             background: 'none',
             height: '100px',
             width: '50px',
             position: 'fixed',
             left: '2px',
-            top: '50%',
+            top: '40%',
             color: 'white',
-            border:'none',
-            fontSize: "16px"
+            border: 'none',
+            fontSize: 'xx-large',
           }}
         >
-          <FontAwesomeIcon icon={chevronLeft} />
-        </button>
+        </button> */}
         <img
+          alt={`Screen Shot of ${currentImage}`}
           src={currentImage}
           style={{ height: 'auto', width: '90vw', maxWidth: '1100px' }}
         />
-        <button
+        {/* <button
+          onClick={() => images.length > 1 && setImageIndex(imageIndex++)}
           style={{
             background: 'none',
             height: '100px',
@@ -62,12 +64,11 @@ const ImageModal = ({ images, handleClose }) => {
             right: '2px',
             top: '50%',
             color: 'white',
-            border:'none',
-            fontSize: "16px"
+            border: 'none',
+            fontSize: '16px',
           }}
         >
-          <FontAwesomeIcon icon={chevronRight} />
-        </button>
+        </button> */}
       </div>
     </div>
   );

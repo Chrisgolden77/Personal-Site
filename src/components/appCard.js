@@ -2,7 +2,13 @@ import React from 'react';
 
 const AppCard = ({ app, onClick }) => {
   return (
-    <div className="app-tile" onClick={() => onClick()}>
+    <div
+      role="button"
+      tabIndex="0"
+      className="app-tile"
+      onClick={() => onClick()}
+      onKeyDown={() => onClick()}
+    >
       <h2>{app.appName}</h2>
       <img
         className="app-image"

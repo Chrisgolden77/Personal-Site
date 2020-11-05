@@ -24,7 +24,7 @@ const AppsPage = ({ path }) => {
       <div className="app-title">
         <h1 style={{ marginBottom: '0px' }}>Apps</h1>
       </div>
-      <div id="app-container">{renderApps()}</div>
+      <div className="app-container">{renderApps()}</div>
       <ImageModal
         handleClose={() => setSelectedAppImages([])}
         images={selectedAppImages}
