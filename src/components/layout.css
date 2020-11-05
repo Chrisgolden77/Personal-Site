@@ -700,3 +700,19 @@ li {
   background-color: rgba(211, 208, 208, 0.438);
   cursor: pointer;
 }
+.image-buttons {
+  background: none;
+  height: auto;
+  width: 150px;
+  color: white;
+  border: none;
+  margin: auto 100;
+  font-size: xxx-large;
+}
+.image-buttons:hover {
+  background-color: rgba(211, 208, 208, 0.438);
+  cursor: pointer;
+}
+.image-buttons:focus {
+  outline: none !important;
+}

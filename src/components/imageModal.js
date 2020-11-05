@@ -1,15 +1,18 @@
-// import { chevronLeft, chevronRight } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faChevronRight,
+  faChevronLeft,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 
 const ImageModal = ({ images, handleClose }) => {
   const [currentImage, setCurrentImage] = useState('');
-  // const [imageIndex, setImageIndex] = useState(0);
+  const [imageIndex, setImageIndex] = useState(0);
   useEffect(() => {
     if (images.length) {
-      setCurrentImage(images[0]);
+      setCurrentImage(images[imageIndex]);
     }
-  }, [images, images.length]);
+  }, [imageIndex, images]);
 
   const modalStyle = {
     alignItems: 'center',
@@ -22,7 +25,13 @@ const ImageModal = ({ images, handleClose }) => {
     top: 0,
     width: '100vw',
   };
-
+  const handleIndexChange = next => {
+    if (next && images.length === imageIndex + 1) {
+      return setImageIndex(0);
+    }
+    if (!next && imageIndex === 0) return setImageIndex(images.length - 1);
+    return next ? setImageIndex(imageIndex + 1) : setImageIndex(imageIndex - 1);
+  };
   return (
     <div
       style={{
@@ -30,45 +39,34 @@ const ImageModal = ({ images, handleClose }) => {
         display: images.length ? 'flex' : 'none',
       }}
     >
+      <div style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+        {images.length > 1 && (
+          <>
+            <button
+              className="image-buttons"
+              onClick={() => handleIndexChange({ next: false })}
+            >
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <button
+              className="image-buttons"
+              onClick={() => handleIndexChange({ next: true })}
+            >
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
+          </>
+        )}
+      </div>
+
       <button className="image-modal-button" onClick={() => handleClose()}>
         X
       </button>
       <div>
-        {/* <button
-          onClick={() => images.length > 1 && setImageIndex(imageIndex--)}
-          style={{
-            background: 'none',
-            height: '100px',
-            width: '50px',
-            position: 'fixed',
-            left: '2px',
-            top: '40%',
-            color: 'white',
-            border: 'none',
-            fontSize: 'xx-large',
-          }}
-        >
-        </button> */}
         <img
           alt={`Screen Shot of ${currentImage}`}
           src={currentImage}
           style={{ height: 'auto', width: '90vw', maxWidth: '1100px' }}
         />
-        {/* <button
-          onClick={() => images.length > 1 && setImageIndex(imageIndex++)}
-          style={{
-            background: 'none',
-            height: '100px',
-            width: '50px',
-            position: 'fixed',
-            right: '2px',
-            top: '50%',
-            color: 'white',
-            border: 'none',
-            fontSize: '16px',
-          }}
-        >
-        </button> */}
       </div>
     </div>
   );

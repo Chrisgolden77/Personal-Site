@@ -1,6 +1,6 @@
 const Apps = [
   {
-    appImages: [''],
+    appImages: [require('../images/client-members.png'), require('../images/client-edit-member.png')],
     appName: 'Swarm Report Client',
     appDescription:
     'A member/report management tool for clients of GoldenK Swarm Report service.\n \nBuilt with React.js, Node, Mysql, and Typescript. \n\nClick the bee icon on this page for a demo!',

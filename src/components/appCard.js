@@ -8,7 +8,7 @@ const AppCard = ({ app, onClick }) => {
         tabIndex="0"
         onClick={() => onClick()}
         onKeyDown={() => onClick()}
-        style={{height: "100%"}}
+        style={{ height: '100%', overflowY: "scroll" }}
       >
         <h2>{app.appName}</h2>
         <img
