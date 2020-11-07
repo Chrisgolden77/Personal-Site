@@ -8,7 +8,7 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
   setPreBodyComponents([
     <script
       type="text/javascript"
-      src="https://client-dev/api/widget/?companyUid=00000000-0000-0000-0000-000000000000"
+      src="https://client-dev.swarmreport.org/api/widget/?companyUid=00000000-0000-0000-0000-000000000000"
       id="bee-widget"
     ></script>,
   ]);
