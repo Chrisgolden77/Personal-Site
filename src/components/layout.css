@@ -23,9 +23,7 @@ body,
 body {
   margin: 0px;
 }
-::-webkit-scrollbar {
-  display: none !important;
-}
+
 #main {
   align-self: center;
   grid-area: main;
@@ -239,8 +237,6 @@ body {
   border-radius: 10px;
   height: 90%;
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-evenly; */
   margin: auto;
   overflow: auto;
   padding: 10px 0 10px 0;
@@ -310,7 +306,7 @@ body {
   display: flex;
   justify-content: space-around !important;
   margin-right: 50px;
-  width: 400px;
+  width: 470px;
 }
 #home-link-wrapper {
   display: flex;
