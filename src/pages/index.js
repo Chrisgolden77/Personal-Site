@@ -7,11 +7,9 @@ import SEO from '../components/seo';
 import Arrow from '../images/arrows.png';
 import ChrisImage from '../images/ChrisProfileImage.jpg';
 
-
 const IndexPage = ({ path }) => (
   <Layout className="home" path={path}>
     <SEO title="Home" />
-    {/* <div className="mobile-page-title"></div> */}
     <div id="home-hero-wrapper">
       <div id="home-hero">
         <div id="home-hero-image-wrapper">
@@ -24,13 +22,13 @@ const IndexPage = ({ path }) => (
         </div>
         <div id="home-hero-paragraph" style={{ textAlign: 'left' }}>
           <h1>
-            Welcome to my personal site! <br />
-            <br />
-            I'm a full stack developer with a passion for learning, problem
-            solving, and collaborating.
-            <br />
-            <br />I got in to Software Development because I want to create
-            tools to help people make a difference.
+            <p>Welcome to my personal site!</p>
+            <p>
+              I'm a full stack developer with a passion for learning, problem
+              solving, and collaborating.
+            </p>
+            I got in to Software Development because I want to create tools to
+            help people make a difference.
           </h1>
           <br />
         </div>

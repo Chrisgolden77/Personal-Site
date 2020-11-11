@@ -1,8 +1,7 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import Logo from '../images/chris-logo.png';
-
+import MobileMenu from '../images/mobile-menu.svg';
 
 const MobileHeader = ({ menuLinks, path }) => {
   const [isMobileMenuOpen, setMobileMenuState] = useState(false);
@@ -26,7 +25,7 @@ const MobileHeader = ({ menuLinks, path }) => {
         onClick={() => setMobileMenuState(!isMobileMenuOpen)}
         onKeyDown={() => setMobileMenuState(!isMobileMenuOpen)}
       >
-        <img alt="Chris Logo" className="header-logo" src={Logo} />
+        <img alt="Chris Logo" className="header-logo" src={MobileMenu}  />
       </button>
       {isMobileMenuOpen ? (
         <div id="header-links">{renderMenuLinks()}</div>

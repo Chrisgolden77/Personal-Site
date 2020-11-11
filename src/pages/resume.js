@@ -10,13 +10,13 @@ const ResumePage = ({ path }) => {
   return (
     <Layout path={path}>
       <SEO title="Resume " />
-      <embed
+      {/* <embed
         alt="Chris Golden's Resume"
         className="resume-iframe"
         scrolling="no"
         src={Resume}
         title="resume"
-      />
+      /> */}
       <div id="mobile-resume-viewer">
         <div id="mobile-resume-header">
           <strong>Download Resume: </strong>
