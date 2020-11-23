@@ -673,11 +673,11 @@ li {
 }
 .image-buttons {
   background: none;
-  height: 50px;
-  width: 150px;
+  height: auto;
+  width: 130px;
   color: white;
   border: none;
-  margin: 10px 50px;
+  margin: 10px;
   font-size: xxx-large;
 }
 .image-buttons:hover {
