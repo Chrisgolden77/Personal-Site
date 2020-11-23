@@ -9,7 +9,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-scrollbar: none;
+  /* -webkit-scrollbar: none; */
 }
 html,
 body,
@@ -673,11 +673,11 @@ li {
 }
 .image-buttons {
   background: none;
-  height: auto;
+  height: 50px;
   width: 150px;
   color: white;
   border: none;
-  margin: auto 100;
+  margin: 10px 50px;
   font-size: xxx-large;
 }
 .image-buttons:hover {

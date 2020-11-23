@@ -39,7 +39,12 @@ const ImageModal = ({ images, handleClose }) => {
         display: images.length ? 'flex' : 'none',
       }}
     >
-      <div style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <div
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+        }}
+      >
         {images.length > 1 && (
           <>
             <button
@@ -48,6 +53,9 @@ const ImageModal = ({ images, handleClose }) => {
             >
               <FontAwesomeIcon icon={faChevronLeft} />
             </button>
+            <strong>
+              {imageIndex + 1}/{images.length}
+            </strong>
             <button
               className="image-buttons"
               onClick={() => handleIndexChange({ next: true })}
@@ -58,7 +66,7 @@ const ImageModal = ({ images, handleClose }) => {
         )}
       </div>
 
-      <button className="image-modal-button" onClick={() => handleClose()}>
+      <button className="image-modal-button" onClick={handleClose}>
         X
       </button>
       <div>
