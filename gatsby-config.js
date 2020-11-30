@@ -3,18 +3,22 @@ module.exports = {
     title: `Chris Golden`,
     menuLinks: [
       {
+        key: 'home',
         name: 'Home',
         link: '/',
       },
       {
+        key: 'portfolio',
         name: 'Portfolio',
         link: '/portfolio/',
       },
       {
+        key: 'resume',
         name: 'Resume',
         link: '/resume/',
       },
       {
+        key: 'contact',
         name: 'Contact',
         link: '/contact/',
       },
