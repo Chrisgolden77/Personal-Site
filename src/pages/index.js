@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import languages from '../assets/languages.json';
 import Cards from '../components/cards';
 import Layout from '../components/layout';
