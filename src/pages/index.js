@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import languages from '../assets/languages.json';
 import Cards from '../components/cards';
 import Layout from '../components/layout';
@@ -10,13 +9,6 @@ import ChrisImage from '../images/ChrisProfileImage.jpg';
 
 const IndexPage = ({ path }) => (
   <Layout className="home" path={path}>
-    <Helmet>
-      <script
-        type="text/javascript"
-        src="https://client-dev.swarmreport.org/api/widget/?companyUid=00000000-0000-0000-0000-000000000000"
-        id="bee-widget"
-      />
-    </Helmet>
     <SEO title="Home" />
     <div id="home-hero-wrapper">
       <div id="home-hero">
