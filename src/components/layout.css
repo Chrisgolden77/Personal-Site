@@ -172,24 +172,20 @@ body {
   margin: auto;
 }
 .app-tile {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(97, 15, 100, 0.753);
-  border-radius: 7px;
-  color: white;
-  height: 90%;
+  height: 90% !important;
   min-height: 480px !important;
   max-height: 600px !important;
-  margin: auto 20px !important;
   padding: 10px;
+  margin: auto -50px auto 0 !important;
   text-align: center;
   min-width: 330px !important;
   max-width: 330px !important;
+  background: #082346 !important;
+
   font-family: monospace;
-  font-size: large;
+  white-space: break-spaces !important;
 }
-.app-tile:hover {
-  background: rgba(163, 51, 167, 0.701);
+.app-tile img:hover {
   cursor: pointer;
 }
 .app-title h1 {
@@ -202,7 +198,7 @@ body {
   display: flex;
   margin: auto;
   overflow: auto;
-  padding: 10px 0 10px 0;
+  padding: 10px;
   width: 95%;
 }
 .app-container::-webkit-scrollbar {
@@ -585,10 +581,14 @@ li {
   font-family: 'DM Mono', monospace;
 }
 .card:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-0.75rem);
 }
 .card:hover ~ .card {
   transform: translateX(130px);
+}
+.card:hover ~ .app-tile {
+  transform: translateX(65px) !important;
+
 }
 .card:not(:first-child) {
   margin-left: -130px;

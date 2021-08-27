@@ -73,7 +73,7 @@ const ImageModal = ({ images, handleClose }) => {
         <img
           alt={`Screen Shot of ${currentImage}`}
           src={currentImage}
-          style={{ height: 'auto', width: '90vw', maxWidth: '1100px' }}
+          style={{maxHeight: '90vh', width: '90vw',maxWidth: '90vw', maxWidth: '1100px', objectFit: 'scale-down'}}
         />
       </div>
     </div>

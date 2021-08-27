@@ -2,12 +2,11 @@ import React from 'react';
 
 const AppCard = ({ app, onClick }) => {
   return (
-    <div className="app-tile">
-      <div
+    <article className="app-tile card" key={app.appName}>
+
+   <div
         role="button"
         tabIndex="0"
-        onClick={() => onClick()}
-        onKeyDown={() => onClick()}
         style={{ height: '100%', overflowY: "auto" }}
       >
         <h2>{app.appName}</h2>
@@ -15,6 +14,9 @@ const AppCard = ({ app, onClick }) => {
           className="app-image"
           alt={`Screen shot of ${app.appName}`}
           src={app.appImages ? app.appImages[0] : ''}
+          onClick={() => onClick()}
+          onKeyDown={() => onClick()}
+          role="button"
         />
         <h3>Description:</h3>
         <div>{app.appDescription}</div>
@@ -30,7 +32,7 @@ const AppCard = ({ app, onClick }) => {
           <strong>{app.appLinkText || 'View Demo Here'}</strong>
         </a>
       ) : null}
-    </div>
+      </article>
   );
 };
 export default AppCard;
