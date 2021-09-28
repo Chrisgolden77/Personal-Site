@@ -6,6 +6,12 @@
     "tags": [{"link": "#", "text": "Used since 2018"}] 
   },
   {
+    "content": "Vue.js is an open-source MVC style Javascript framework for building user interfaces or UI components created by Evan You.",
+    "language": "Vue.js",
+    "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2560px-Vue.js_Logo_2.svg.png",
+    "tags": [{"link": "#", "text": "Used on and off since 2018"}] 
+  },
+  {
     "content": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
     "language": "Node.js",
     "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png",
@@ -43,7 +49,7 @@
   },
   {
     "content": "CSS is a language used for describing the presentation of a document written in a markup language like HTML",
-    "language": "CSS",
+    "language": "CSS(and scss/styled components",
     "languageIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png",
     "tags": [{"link": "#", "text": "Used since 2018"}] 
   }
