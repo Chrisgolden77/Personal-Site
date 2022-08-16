@@ -1,5 +1,29 @@
 const Apps = [
   {
+    appImages: [require('../images/Lobby6_Today.png'), require('../images/Lobby6_Appointment.png'), require('../images/Lobby6_Edit_Appointment.png')],
+    appName: 'Lobby6',
+    appDescription:
+    'A Credit Union employee portal for management of customers, appointments, questionaires, locations, products, employees and more.',
+    appLink: 'https://www.cu-apps.com/lobby-management',
+    appLinkText: 'More Info about CU-Apps',
+  },
+  {
+    appImages: [require('../images/Kiosk_Dashboard.png'), require('../images/Kiosk_Today.png'), require('../images/Kiosk_Employee_Scheduler.png')],
+    appName: 'Lobby6 Credit Union Kiosk',
+    appDescription:
+    'A Kiosk application for appointment scheduling, check-ins, Employee appointment management.',
+    appLink: 'https://www.cu-apps.com/lobby-management',
+    appLinkText: 'More Info about CU-Apps',
+  },
+  {
+    appImages: [require('../images/Mobile_Scheduler.png'), require('../images/Scheduler_Map_Large.png')],
+    appName: 'Lobby6 Online Schuduler',
+    appDescription:
+    'An online Credit Union appointment scheduling application, with customizable questionaires. Build for mobile first.',
+    appLink: 'https://www.cu-apps.com/lobby-management',
+    appLinkText: 'More Info about CU-Apps',
+  },
+  {
     appImages: [require('../images/donut-chart.png'), require('../images/performance-chart.png'), require('../images/waterfall.png'),require('../images/asin-breakdown.png'), require('../images/data-select.png')],
     appName: 'SCOUT by RUN AMZ',
     appDescription:
@@ -38,14 +62,6 @@ const Apps = [
       'My personal and porfolio site.\n\nBuilt with React.js, Gatsby, CSS, and deployed on Netlify',
     appLink: 'https://github.com/chrisgolden77/personal-site',
     appLinkText: 'View Repo Here'
-  },
-  {
-    appImages: [require('../images/order-up.png')],
-    appName: 'Order Up!',
-    appDescription:
-      'A simple application interface for order taking orders.\n\nBuilt with React.js',
-    appLink: 'https://chrisgolden77.github.io/order-up/',
-    // appLinkText: 'View Demo Here'
   },
 ];
 export default Apps;
