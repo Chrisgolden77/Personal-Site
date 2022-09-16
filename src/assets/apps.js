@@ -1,6 +1,6 @@
 const Apps = [
   {
-    appImages: [require('../images/Lobby6_Today.png'), require('../images/Lobby6_Appointment.png'), require('../images/Lobby6_Edit_Appointment.png')],
+    appImages: [require('../images/Lobby6_Today.png'), require('../images/Lobby6_Appointment.png'), require('../images/Lobby6_Edit_Appointment.png'), require('../images/Lobby6_Admin_Scheduler.png')],
     appName: 'Lobby6',
     appDescription:
     'A Credit Union employee portal for management of customers, appointments, questionaires, locations, products, employees and more.',
