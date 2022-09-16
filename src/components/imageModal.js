@@ -25,7 +25,7 @@ const ImageModal = ({ images, handleClose }) => {
     top: 0,
     width: '100vw',
   };
-  const handleIndexChange = next => {
+  const handleIndexChange = ({next}) => {
     if (next && images.length === imageIndex + 1) {
       return setImageIndex(0);
     }
